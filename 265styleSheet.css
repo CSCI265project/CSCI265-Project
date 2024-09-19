@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.topbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    background-color: rgb(255, 203, 213);
+}
+
+.topbar p{
+    font-size: 45px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font-size: 35px;
+    height: auto;
+    position: relative;
+    background-color: white;
+    width: 100%;
+}
+
+.navbar a{
+    float: left;
+    background-color: rgb(255, 172, 183);
+    padding: 5px 25px 5px 25px;
+    margin: 5px 2px 5px 2px;
+    width: 20%;
+    text-align: center;
+}
+
+.navbar .curr{
+    background-color: aquamarine;
+}
+
+.navbar a:hover{
+    background-color: aquamarine;
+}
+
+main{
+    background-color: rgb(255, 245, 245);
+    min-height: 1000px;
+}
+
