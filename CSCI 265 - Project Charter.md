@@ -6,9 +6,7 @@ Project/product name:
 ## Members and contact email:
 
 Nihal Manhas: [nihalmanhass@gmail.com](mailto:nihalmanhass@gmail.com)
-
-### Xiaoya Xing: [xingxiaoya2003@gmail.com](mailto:xingxiaoya2003@gmail.com) 
-
+Xiaoya Xing: [xingxiaoya2003@gmail.com](mailto:xingxiaoya2003@gmail.com) 
 Kazuki Lynch: [kozaru2004@gmail.com](mailto:kozaru2004@gmail.com)  
 Yasmine Pi: [fridayasmine13@gmail.com](mailto:fridayasmine13@gmail.com)  
 Nayana Marri: [nayanamarri9@gmail.com](mailto:nayanamarri9@gmail.com)  
@@ -19,7 +17,7 @@ Daniela Malagón: [danielitamalagon@gmail.com](mailto:danielitamalagon@gmail.com
 Our product is a website that predicts and tracks the menstrual cycles with the addition of helpful information and resources to better help women with any problems they may encounter.
 
 ## Team philosophy:
-
+Managing menstrual health is a crucial aspect of overall well-being in the modern world. Our period-tracking website aims to empower individuals by providing a comprehensive, user-friendly platform to monitor and manage their menstrual cycles effectively. By integrating advanced features tailored to the needs of our users, the website will offer not only a reliable way to track menstrual cycles but also valuable insights and support for reproductive health.
 ## Team roles/responsibilities:
 
 The team roles have been broken up into 2 parts part 1 is their main responsibilities under the header main roles, and part 2 is their substudys which means if another team member needs help or something slips through the cracks we can quickly get someone assigned to it based on understood strengths discussed in our first meeting and online discussion.
