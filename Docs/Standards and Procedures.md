@@ -32,7 +32,7 @@ Each part details the endorsement of the standards/processes and outlines the pr
 
 ---
 
-A Docs Directory will be maintained at the top level of the project repo.  This branch will contain all the files mentioned below(once completed, also be updated as the project goes on). For each md file, there is a designated maintainer who is responsible for updating and maintaining that specific file as time goes on. Most of these md docs are worked on by some team members but not all at their initial conception as time goes on they need to be updated by a team member just get the guidance of the original author listed below on that document.
+A Docs Directory will be maintained at the top level of the project repo. This Directory will contain all the files mentioned below(once completed, also be updated as the project goes on). For each md file, there is a designated maintainer who is responsible for updating and maintaining that specific file as time goes on. Most of these md docs are worked on by some team members but not all at their initial conception as time goes on they need to be updated by a team member just get the guidance of the original author listed below on that document. This Docs directory will be found in the 'main' branch along with images directory
 
 proposal.md(Nayana)  
 charter.md(Kazuki)  
@@ -45,7 +45,8 @@ proofconcept.md(Yasmine)
 testplan.md(Xiaoya)  
 closeout.md(Nayana)
 
-In the Document branch, there will be a ‘images’ subbranch. Any images used in the various.md files will be located in that directory. The file name used must begin with the relevant document followed by a plus sign and relevant uses eg: proposal.md+outlielayout.jpeg.
+along side the docs directory in main, there will be a ‘images’ directory. Any images used in the various.md files will be located in that directory. The file name used So the images folder in git is divided in two one for the project sketches and other for the DFDs 
+When you look at the DFDs each one has a special name (DFD0, DFDM, etc), when you refer to the DFD in the document please be sure to use those names.
 
 To maintain an organized look and layout of the project repo over the semester, the team should try its best to make files use the same layout, fonts, and headers to maintain a consistent look.
 
@@ -72,8 +73,11 @@ This section is to be updated and reviewed during phase 4, as the design and pro
 ---
 
 The team Github repo ([https://github.com/CSCI265project/CSCI265-Project](https://github.com/CSCI265project/CSCI265-Project)) will be set up and maintained by the version control lead (Nihal) and understudy(Kazuki). The Version lead will have admin and the understudy will have the role ‘maintain’ unless the version lead is sick or unable to work understudy will become admin and a chosen team member will become the new maintain.
-
-The project will have 3 core branches: testing, production and development. The purpose and guidelines for the following branches are as follows:
+The project will have 4 branchs total 3 core branchs for coding purposes and one branch for Docs directory, images directory, and othe misc documentations or files not needed in the core barnches.
+ 
+ A branch called 'Main' will be used as our docs, images branch, aswell as any other misc items that are not suitable for the core barnches
+ 
+ 3 core branches: testing, production and development. The purpose and guidelines for the following branches are as follows:
 
 * Testing: this branch will represent when the dev thinks the code is ready to be implemented, if the result is correct and error free it will become the new face of the product  
 * Production:  This will be the branch where the most recently tested and error-free code, most likely be the branch for submission   
