@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/*Top banner css*/
 .topbar{
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@
     background-color: rgb(255, 203, 213);
 }
 
+/*Top banner text*/
 .topbar p{
     font-size: 45px;
     padding-top: 20px;
@@ -19,8 +21,8 @@
     font-family: serif;
 }
 
+/*Navbar banner*/
 .navbar{
-    position: sticky;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -31,6 +33,7 @@
     width: 100%;
 }
 
+/*Navbar buttons*/
 .navbar a{
     float: left;
     background-color: rgb(255, 172, 183);
@@ -40,40 +43,20 @@
     text-align: center;
 }
 
-.navbar .curr{
-    background-color: aquamarine;
-}
-
 .navbar a:hover{
     background-color: aquamarine;
 }
 
+.navbar .curr{
+    background-color: aquamarine;
+}
+
+/*Main container settings*/
 main{
-    display: flex;
-    flex-direction: column;
     background-color: rgb(255, 245, 245);
     min-height: 1000px;
     padding: 50px 30px 0px 30px;
 }
-
-.quarter{
-    display: flex;
-    flex-direction: row;
-}
-
-.quarter .month{
-    background-color: aqua;
-    padding: 10px;
-    width: 25%;
-    height: 300px;
-    margin: 10px;
-}
-
-.quarter .month p{
-    text-align: center;
-    font-size: 30px;
-}
-
 
 
 
