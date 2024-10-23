@@ -46,7 +46,7 @@ To implement this project, we plan to use HTML and CSS for the web pages and Jav
 
 1. **Setting up an account/Registration page:**
 
-**![Image1][Images/ProjectDFDs/SettingAcountModule(DFDSA).png]**   
+![Setting up accounts/login page](Images/ProjectDFDs/SettingAcountModule(DFDSA).png)  
 This is the account registration page and it is the first page the user encounters when entering this website. This page gives the user the option to sign up to the website so that they may keep their information tied to an account and receive notifications (in the form of an email) to warn them of upcoming period dates.  
 To create an account, the user will have to provide an email address, their age (for certain content purposes and the possible stretch goal of a chat system), as well as their period information to give them a calendar immediately. The user will have the choice to receive notifications. They must also agree to the Terms and Conditions of creating an account. Once all of this is complete, the information is stored in the database to let the user access it at any time. For more details, refer to DFDSA.
 
