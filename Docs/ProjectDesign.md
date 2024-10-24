@@ -93,7 +93,7 @@ For the implementation of the Front-End, we will use HTML and CSS, for Back-End 
 
 2. **System context:**
 
-![System-Context][Images/ProjectDFDs/SystemContext1(DFD0).png]
+![System-Context](Images/ProjectDFDs/SystemContext1(DFD0).png)
 
 Once the registration/account sign-up is completed,  the user will be directed to the Home page. The home page provides an overview/dashboard of the features. The navigation bar in the home page will connect to most of the features of the period tracker. The navigation bar will include options such as Calendar, Symptoms, Moods, Heath, Education and more . The user will be directed to the corresponding page they’d like to visit by clicking on these options. For a clearer visual representation please refer to DFD0.
 
