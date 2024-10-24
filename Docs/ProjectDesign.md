@@ -289,6 +289,6 @@ The data flow on the Education page is minimal, as it primarily involves the use
 
 ---
 
-## ![][image10]
+## ![Grand design]()
 
 This diagram takes parts from all of the previous diagrams and combines them. Some parts have been simplified for ease of reading, such as all user inputs being simplified to ‘User Input’. Each part is discussed in more detail in the above ‘Logical Design’ section.
