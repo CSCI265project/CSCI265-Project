@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 /*Top banner css*/
 .topbar{
     display: flex;
@@ -26,11 +30,13 @@
     display: flex;
     flex-direction: row;
     align-content: center;
+    position: sticky;
+    top: 0;left: 0;right: 0;
     font-size: 35px;
     height: auto;
-    position: relative;
     background-color: white;
-    width: 100%;
+    margin: 0px 5px 0px 5px;
+    z-index: 1;
 }
 
 /*Navbar buttons*/
@@ -41,10 +47,12 @@
     margin: 5px 2px 5px 2px;
     width: 20%;
     text-align: center;
+    color: black;
 }
 
 .navbar a:hover{
     background-color: aquamarine;
+    color: red;
 }
 
 .navbar .curr{
