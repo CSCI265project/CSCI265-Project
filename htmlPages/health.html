@@ -2,7 +2,7 @@
 <!--WEWANTGOODMARK-->
 <!--C-Clo-->
 <!--Xiaoya Xing-->
-<!--Health Page & Top/list Bar 其他的字体是cormorant garamond-->
+<!--Health Page & Top/list Bar-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,84 +18,95 @@
     <meta name="robots" content="INDEX, FOLLOW">
     <title>C-Clo Health</title>
 
+    <!--<link rel="stylesheet" href="265styleSheet.css">-->
     <!--Font Style From Google-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400&display=swap" rel="stylesheet">
+
     
     <style>
         *{
-            margin:0;
-            padding:0;
-        }
-        
-        body{
-            background-color: #fff7f7;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        #title{
-            text-align: center;
-            font-size: 45px;
-            color:#000000;
-            font-family: 'Shrikhand', serif; 
-            font-weight: bold;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            margin: 0;
+            box-sizing: border-box;
         }
 
-        #title_header {
-            background-color: #ffcbd5;
-            
-        }
-
-        /*Header*/
-        .header{
-            height: 70px;
-            background-color:#f4adb7;
-            z-index: 1000;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .header ul{
-            margin-top: 0px;
-            list-style-type: none;
+        .topbar{
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            top: 0;
             width: 100%;
+            background-color: rgb(255, 203, 213);
+            font-family: 'Shrikhand', serif; 
         }
 
-        .header>ul>li{
+        .topbar p{
+            font-size: 45px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+            font-family: serif;
+            font-family: 'Shrikhand', serif; 
+        }
+
+        .navbar{
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            font-size: 35px;
+            height: auto;
+            position: relative;
+            background-color: white;
+            width: 100%;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .navbar a{
             float: left;
-            height: 70px;
-            width: 150px;
-            color: #f4adb7;
+            background-color: rgb(255, 172, 183);
+            padding: 5px 25px 5px 25px;
+            margin: 5px 2px 5px 2px;
+            width: 20%;
             text-align: center;
-            font-size: 23px;
-            font-family: 'Cantata One', serif;
-            
-            line-height: 70px;
-            list-style: none;
-            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
         }
 
-        a{
-            color: rgb(0, 0, 0);
-            text-decoration: none;
+        .navbar .curr{
+            background-color: #d8e2dc;
+            font-family: 'Cormorant Garamond', serif;
         }
 
-        ul>li:hover{
-            background-color:#d8e2dc;
+        .navbar a:hover{
+            background-color: #d8e2dc;
+            font-family: 'Cormorant Garamond', serif;
         }
 
-        ul>li>a:active{
-            color:#d8e2dc;
+        main{
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(255, 245, 245);
+            min-height: 1000px;
+            padding: 50px 30px 0px 30px;
         }
+
+        .quarter{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .quarter .month{
+            background-color: aqua;
+            padding: 10px;
+            width: 25%;
+            height: 300px;
+            margin: 10px;
+        }
+
+        .quarter .month p{
+            text-align: center;
+            font-size: 30px;
+        }
+        /*------------up need to delete before submit----------------*/
 
         /*Video*/
         .prompt_part{
@@ -106,8 +117,8 @@
         .prompt{
             text-align: center;
             color: #6e595f;
-            font-family: 'Cantata One', serif;
-            font-size: 24px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 26px;
         }
 
         .subtitle_part{
@@ -118,8 +129,8 @@
         .subtitle{
             text-align: center;
             color: #f5afb9;
-            font-family: 'Cantata One', serif;
-            font-size: 24px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 28px;
         }
 
         .videos_section {
@@ -133,40 +144,93 @@
         }
 
         .video_name {
-            font-family: 'Cantata One', serif;
+            font-family: 'Cormorant Garamond', serif;
             color: #000;
             margin-top: 10px;
         }
 
         /*FAQ*/
+        .faq-container {
+            width: 90%;
+            margin: 0 auto;
+        }
 
+        .faq-item {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+        }
 
+        .faq-question {
+            width: 100%;
+            background-color: #f4adb7;
+            color: #000;
+            font-family: 'Cormorant Garamond', serif;
+            border: none;
+            outline: none;
+            text-align: left;
+            padding: 20px;
+            cursor: pointer;
+            font-size: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            background-color: #f9f3f3;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-out;
+            padding: 0 15px;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 20px;
+        }
+
+        .faq-answer p {
+            padding: 20px 0;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question {
+            background-color: #ffcbd5;
+        }
+
+        .arrow {
+            font-size: 18px;
+            transform: rotate(0);
+            transition: transform 0.3s ease-out;
+        }
+
+        .faq-item.active .arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq_icon{
+            width: 40px;
+            transform: rotate(180deg);
+        }
     </style>
 </head>
 <body>
     <!--Title-->
-    <div id="title_header">
-        <div id="title">Health</div>
-    </div>
 
     <!--Nav Bar-->
-    <div>
-        <div class="header">
-            <ul>
-                <li><a href="1_mainpage.html">Home</a></li>
-
-                <li><a href="2_Calender_page.html">Calendar</a></li>
-                
-                <li><a href="3_Symptoms_page.html">Symptoms</a></li>
-
-                <li><a href="4_Moods_page.html">Moods</a></li>
-
-                <li><a href="5_Health_page.html">Health</a></li>
-
-                <li><a href="6_Education_page.html">Education</a></li>
-            </ul>
+    <header>
+        <div class="topbar">
+            <p>Health</p>
         </div>
-    </div>
+        <div class="navbar">
+            <a>Home</a>
+            <a>Calendar</a>
+            <a>Symptoms</a>
+            <a>Moods</a>
+            <a class="curr">Health</a>
+            <a>Education</a>
+        </div>
+    </header>
 
     <!--Video-->
     <div class="prompt_part">
@@ -180,12 +244,12 @@
     <div class="videos_section">
       <div class="video_container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="video_name">Video 1 Name</p>
+          <p class="video_name">This is Your Period</p>
       </div>
   
       <div class="video_container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p class="video_name">Video 2 Name</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cjbgZwgdY7Q?si=vvAbon4NbMMHuMLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></iframe>
+          <p class="video_name">Why do women have periods?</p>
       </div>
     </div>
 
@@ -194,24 +258,61 @@
         <p class="subtitle">FAQ</p>
     </div>
 
-    
-    <div>
-        <details>
-          <summary>How often am I supposed to change my pad/tampon?</summary>
-          <p>You should change your pad or tampon every 4–6 hours, or as needed depending on your flow.</p>
-        </details>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">How often am I supposed to change my pad/tampon?
+                <img src="down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+            <div class="faq-answer">
+                <p>You should change your pad or tampon every 4–6 hours, or as needed depending on your flow.</p>
+            </div>
+        </div>
 
-        <details>
-          <summary>Can I exercise during my period?</summary>   
-          <p>Yes, exercising during your period is generally safe and can help reduce cramps and improve mood.</p>
-        </details>      
+        <div class="faq-item">
+            <button class="faq-question">Can I exercise during my period?
+                <img src="down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+            <div class="faq-answer">
+                <p>Yes, exercising during your period is generally safe and can help reduce cramps and improve mood.</p>
+            </div>
+        </div>
 
-        <details>
-          <summary>Why do I experience cravings before my period?</summary>
-          <p>Hormonal changes during your menstrual cycle can affect your appetite, leading to cravings, especially for carbohydrates and sweets.</p>
-        </details>
+        <div class="faq-item">
+            <button class="faq-question">Why do I experience cravings before my period?
+                <img src="down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+            <div class="faq-answer">
+                <p>Hormonal changes during your menstrual cycle can affect your appetite, leading to cravings,
+                    especially for carbohydrates and sweets.</p>
+            </div>
+        </div>
     </div>
 
+    <script>
+        const faqItems = document.querySelectorAll('.faq-item');
 
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                faqItems.forEach(i => {
+                    if (i !== item) {
+                        i.classList.remove('active');
+                        i.querySelector('.faq-answer').style.maxHeight = null;
+                        i.querySelector('.arrow').style.transform = 'rotate(0deg)';
+                    }
+                });
+
+                item.classList.toggle('active');
+                const answer = item.querySelector('.faq-answer');
+                const arrow = item.querySelector('.arrow');
+                if (item.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    arrow.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = null;
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+    </script>
 </body>
 </html>
