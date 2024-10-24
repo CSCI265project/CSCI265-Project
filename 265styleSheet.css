@@ -22,7 +22,6 @@ body{
     font-size: 45px;
     padding-top: 20px;
     padding-bottom: 40px;
-    font-family: serif;
 }
 
 /*Navbar banner*/
@@ -51,12 +50,12 @@ body{
 }
 
 .navbar a:hover{
-    background-color: aquamarine;
+    background-color: #d8e2dc;
     color: red;
 }
 
 .navbar .curr{
-    background-color: aquamarine;
+    background-color: #d8e2dc;
 }
 
 /*Main container settings*/
