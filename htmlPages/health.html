@@ -1,0 +1,217 @@
+<!--CSCI 265 Group Project-->
+<!--WEWANTGOODMARK-->
+<!--C-Clo-->
+<!--Xiaoya Xing-->
+<!--Health Page & Top/list Bar 其他的字体是cormorant garamond-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html tutorial, css tutorial">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>C-Clo Health</title>
+
+    <!--Font Style From Google-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            background-color: #fff7f7;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #title{
+            text-align: center;
+            font-size: 45px;
+            color:#000000;
+            font-family: 'Shrikhand', serif; 
+            font-weight: bold;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #title_header {
+            background-color: #ffcbd5;
+            
+        }
+
+        /*Header*/
+        .header{
+            height: 70px;
+            background-color:#f4adb7;
+            z-index: 1000;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header ul{
+            margin-top: 0px;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .header>ul>li{
+            float: left;
+            height: 70px;
+            width: 150px;
+            color: #f4adb7;
+            text-align: center;
+            font-size: 23px;
+            font-family: 'Cantata One', serif;
+            
+            line-height: 70px;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        a{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+        ul>li:hover{
+            background-color:#d8e2dc;
+        }
+
+        ul>li>a:active{
+            color:#d8e2dc;
+        }
+
+        /*Video*/
+        .prompt_part{
+            padding-top: 40px;
+
+        }
+
+        .prompt{
+            text-align: center;
+            color: #6e595f;
+            font-family: 'Cantata One', serif;
+            font-size: 24px;
+        }
+
+        .subtitle_part{
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .subtitle{
+            text-align: center;
+            color: #f5afb9;
+            font-family: 'Cantata One', serif;
+            font-size: 24px;
+        }
+
+        .videos_section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .video_container {
+            text-align: center;
+        }
+
+        .video_name {
+            font-family: 'Cantata One', serif;
+            color: #000;
+            margin-top: 10px;
+        }
+
+        /*FAQ*/
+
+
+    </style>
+</head>
+<body>
+    <!--Title-->
+    <div id="title_header">
+        <div id="title">Health</div>
+    </div>
+
+    <!--Nav Bar-->
+    <div>
+        <div class="header">
+            <ul>
+                <li><a href="1_mainpage.html">Home</a></li>
+
+                <li><a href="2_Calender_page.html">Calendar</a></li>
+                
+                <li><a href="3_Symptoms_page.html">Symptoms</a></li>
+
+                <li><a href="4_Moods_page.html">Moods</a></li>
+
+                <li><a href="5_Health_page.html">Health</a></li>
+
+                <li><a href="6_Education_page.html">Education</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--Video-->
+    <div class="prompt_part">
+        <p class="prompt">Hygiene and self care are important, especially in your period!</p>
+    </div>
+
+    <div class="subtitle_part">
+        <p class="subtitle">Tutorials</p>
+    </div>
+
+    <div class="videos_section">
+      <div class="video_container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="video_name">Video 1 Name</p>
+      </div>
+  
+      <div class="video_container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WOi2Bwvp6hw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="video_name">Video 2 Name</p>
+      </div>
+    </div>
+
+    <!--FAQ-->
+    <div class="subtitle_part">
+        <p class="subtitle">FAQ</p>
+    </div>
+
+    
+    <div>
+        <details>
+          <summary>How often am I supposed to change my pad/tampon?</summary>
+          <p>You should change your pad or tampon every 4–6 hours, or as needed depending on your flow.</p>
+        </details>
+
+        <details>
+          <summary>Can I exercise during my period?</summary>   
+          <p>Yes, exercising during your period is generally safe and can help reduce cramps and improve mood.</p>
+        </details>      
+
+        <details>
+          <summary>Why do I experience cravings before my period?</summary>
+          <p>Hormonal changes during your menstrual cycle can affect your appetite, leading to cravings, especially for carbohydrates and sweets.</p>
+        </details>
+    </div>
+
+
+</body>
+</html>
