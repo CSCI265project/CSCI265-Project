@@ -129,13 +129,13 @@ There is no direct data storage for the home page, instead, it displays the data
 
 Our project will utilize HTML, CSS and JavaScript to implement period tracking. The Homepage will facilitate navigation through different sections/features of our website. HTML can handle the basic navigation requirements without additional technologies. This will help users to move around pages easily.
 
-![Website Web][Images/ProjectDFDs/SystemContext2(DFD1).png]
+![Website Web](Images/ProjectDFDs/SystemContext2(DFD1).png)
 
 The chart DFD1 shows our website’s flexible and user-friendly navigation. Features of the website’s home page are clear and organized in the navigation bar, making it easy for users to access the Calendar, Moods, Symptoms, Resources and Education pages (with a click). Users can smoothly transfer from the Home page to a selected feature page. Once inside any selected feature page, they can go back to the Home page or any other feature page. 
 
 3. **Home page module:**
 
-![HomepageModule][Images/ProjectDFDs/MainPageModule(DFDMP).png]  
+![HomepageModule](Images/ProjectDFDs/MainPageModule(DFDMP).png)
 This is the main page where the user can see what day they are currently in. It provides the date of the user’s upcoming period, and some quick links to easily add a date or ask for advice on their symptoms or moods. This is a system that works as a cycle where the date is updated until the user gets their period, then the cycle will be restarted (updated to Day 1).  The data flow diagram (DFDMP) is shown above.
 
 **3.1Process:**   
@@ -162,7 +162,7 @@ The programming languages that are going to be used are HTML, CSS, and JavaScrip
 
 4. **Calendar Module:**
 
-![CalenderModule][Images/ProjectDFDs/PeriodModule(DFDP).png]  
+![CalenderModule](Images/ProjectDFDs/PeriodModule(DFDP).png) 
 	This is the calendar page, where the project’s main output from the period tracker is found. Once all required inputs are submitted by the user, the calendar page will display a 6-month calendar with possible dates of the user’s period highlighted. The closest date will be displayed on the main page as discussed in the above module. This calendar can be changed/updated at any time. The data flow diagram (DFDP) is shown above.
 
 **4.1 Process:**   
@@ -183,7 +183,7 @@ The data of the period dates is stored under the user account in the database. B
 
 5. **Symptoms module** 
 
-![SymptomsModule][Images/ProjectDFDs/SymptomsModule(DFDS).png]  
+![SymptomsModule](Images/ProjectDFDs/SymptomsModule(DFDS).png)  
 The symptoms screen appears in a survey format. The user checks the symptoms and depending on the symptoms, it displays possible painkillers that can be used. It does include a warning that these are just recommendations, and the user is responsible for any secondary effects of taking these and that seeing a doctor is likely the best option for them.
 
 This is a one-to-one system where the number of outputs depends on the number of inputs that the user provides, for each input one output is going to be displayed, since there are 8 different inputs, there are 8 different outputs. For now, each output is labeled as possible advice as the team needs to do some research to provide the appropriate advice. The data flow diagram (DFDS) is shown below:
@@ -212,7 +212,7 @@ The programming languages that are going to be used are HTML, CSS, and JavaScrip
 
 6. **Moods module:**
 
-![MoodsModule][Images/ProjectDFDs/MoodsModule(DFDM).png]
+![MoodsModule](Images/ProjectDFDs/MoodsModule(DFDM).png)
 
 The Moods page appears in a survey format where the user checks the moods and depending on the moods, it displays possible activities that can be done to improve their mood.  Similar to the above Symptoms module, this page is a one-to-one system where the number of outputs depends on the number of inputs that the user provides. For each input, one output is going to be displayed and since there are 14 different inputs, there are 14 different outputs. For now, each output is labeled as possible advice as the team needs to do some research to provide the appropriate advice.
 
@@ -239,7 +239,7 @@ The programming languages that are going to be used are HTML, CSS, and JavaScrip
 
 7. **Health module:**
 
-![HealthModule][Images/ProjectDFDs/HealthModule(DFDH).png]  
+![HealthModule](Images/ProjectDFDs/HealthModule(DFDH).png)  
 	The health page provides helpful information through two main options: videos and frequently asked questions (FAQ). Users can choose to watch videos for anyone needing help on any period-related topics. The Users can use the FAQ lists to quickly find answers to common concerns. This page is designed to offer direct and clear information without requiring any input from the user. As the Health page is purely for information delivery, no data flow or storage is needed. The page serves as a static resource where users can access reliable health content related to periods. For more information refer to DFDH.
 
 **7.1 Process:**   
@@ -259,7 +259,7 @@ Since the Health page is designed purely to display information in the form of v
 	The Health module will use HTML and CSS for layout and design. JavaScript can be used to manage the dynamic display of videos and FAQs. Video playback can be implemented through embedded video players, while FAQ content can be displayed using expandable question lists. Since all content is static and preloaded, no backend data processing is required.
 
 8. **Education module:**
-   ![][Images/ProjectDFDs/EducationModule(DFDE).png]
+   ![](Images/ProjectDFDs/EducationModule(DFDE).png)
 
 	The Education page provides users with external links to health resources. These resources will cover a wide range of topics related to period health, offering more in-depth information for users who wish to explore further in the given topic. Similar to the Health page, the Education page does not require any input from the user. It is designed to guide users to external websites where they can access additional educational materials. Each link corresponds to a specific external source, and these links will open in a new tab, allowing users to easily return to the Education page afterward. This page does not collect or store any user data, as it simply serves as a gateway to more information. For more information, refer to DFDE. 
 
