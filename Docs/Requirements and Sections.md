@@ -198,22 +198,22 @@ This section does not require user input, but it just displays scientific inform
 Below are the sketches of how the home page and the different screens included are going to look like: 
 
 **Home page**  
-![][MainPage]
+![MainPage](Images/ProjectSketches/MainPage.png)
 
 **Calendar Screen**  
-**![][CalendarPage]**
+![Calendar Screen](Images/ProjectSketches/CalendarPage.png)
 
 **Symptoms Screen**  
-**![][LoginPage]**
+![SymptomsScreen](Images/ProjectSketches/SymptomsPage.png)
 
 **Moods Screen**  
-**![][MoodsPage]**
+![MoodsPage](Images/ProjectSketches/MoodsPage.png)
 
 **Health Screen**  
-**![][HealthPage]**
+![HealthPage](Images/ProjectSketches/HealthPage.png)
 
 **Education Screen**  
-**![][EducationPage]**
+![EducationPage](Images/ProjectSketches/EducationPage.png)
 
 **7\. Feature prioritization**  
 This is the team’s first attempt to develop a web page with such complexity which makes it uncertain which goals are going to be achievable and which ones are likely to be incomplete or not even initiated. 
