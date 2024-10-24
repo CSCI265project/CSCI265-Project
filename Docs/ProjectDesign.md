@@ -136,6 +136,7 @@ The chart DFD1 shows our website’s flexible and user-friendly navigation. Feat
 3. **Home page module:**
 
 ![HomepageModule](Images/ProjectDFDs/MainPageModule(DFDMP).png)
+
 This is the main page where the user can see what day they are currently in. It provides the date of the user’s upcoming period, and some quick links to easily add a date or ask for advice on their symptoms or moods. This is a system that works as a cycle where the date is updated until the user gets their period, then the cycle will be restarted (updated to Day 1).  The data flow diagram (DFDMP) is shown above.
 
 **3.1Process:**   
