@@ -47,8 +47,8 @@ To implement this project, we plan to use HTML and CSS for the web pages and Jav
 1. **Setting up an account/Registration page:**
 
 ![Setting up accounts/login page](Images/ProjectDFDs/SettingAcountModule(DFDSA).png)  
-This is the account registration page and it is the first page the user encounters when entering this website. This page gives the user the option to sign up to the website so that they may keep their information tied to an account and receive notifications (in the form of an email) to warn them of upcoming period dates.  
-To create an account, the user will have to provide an email address, their age (for certain content purposes and the possible stretch goal of a chat system), as well as their period information to give them a calendar immediately. The user will have the choice to receive notifications. They must also agree to the Terms and Conditions of creating an account. Once all of this is complete, the information is stored in the database to let the user access it at any time. For more details, refer to DFDSA.
+This is the account registration. The public address for the site brings people to the login page, but if they are not registered there is a link that will take them to the registration web page. This page gives the user the option to sign up to the website so that they may keep their information tied to an account and receive notifications (in the form of an email) to warn them of upcoming period dates.  
+To create an account, the user will have to provide an email address, their age (for certain content purposes and the possible stretch goal of a chat system), as well as their period information to give them a calendar immediately. The user will have the choice to receive notifications. They must also agree to the Terms and Conditions of creating an account. Once all of this is complete, the information is stored in the database to let the user access it at any time. For more details, refer to DFDSA. Once they are register and hit on the submit button, they are taken to the login page once again.
 
 **1.1 Process:** 
 
@@ -59,7 +59,7 @@ To create an account, the user will have to provide an email address, their age 
   * Period Information(Flow,type,duration…)  
   * Notifications(yes/no)  
 * Terms and Conditions: The user must agree to the Terms and Conditions or else the account won't be created   
-* Submit: Once the above has been completed, the user can click the “Sign up/Create Account” button, the information is validated.   
+* Submit: Once the above has been completed, the user can click the “Sign up/Create Account” button, the information is validated. The user will not be able to access the menu options without logging into their accounts.   
 * Data Storage: if the user input is valid, the data is securely stored in a database   
 * Confirmation (stretch goal on how detailed this will be):  The user possibly receives an email thanking them for creating an account and in the email a jumpstart guide to the website.  
 * Access to Account: The user can now log in access their account and view notifications
@@ -76,8 +76,6 @@ To create an account, the user will have to provide an email address, their age 
   * Correct and valid data is stored in the database
 
 
-	
-
 **1.3 Data Stores:**
 
 * User Database:   
@@ -89,7 +87,9 @@ To create an account, the user will have to provide an email address, their age 
 
 		  
 **1.4** **Preliminary thoughts on the transition from the logical design to an implementation:**  
-For the implementation of the Front-End, we will use HTML and CSS, for Back-End Javascript, for Database MySQL.   For security considerations, we plan to use proper hashing for any sensitive information like passwords and on the database side comply with relevant data privacy laws. Our end product to users should be a clean, user-friendly, and easy-to-use website login page.
+For the implementation of the Front-End, we will use HTML and CSS, for Back-End Javascript and PHP, and for Database MySQL. For security considerations, we plan to use proper hashing for any sensitive information like passwords using incorporated PHP functions and on the database side comply with relevant data privacy laws, a verification process is also incorporated by sending a specific code to the user's email so they can verify their account. It is also intended that login is checked every time a menu option is chosen since this should be only accessible if the user is logged in.
+
+There are going to be three databases: one that stores the user registering information so the registering, log in and logout processes can run, the verification database to refer to the code provided to verify the user account, and the notification database that saves the user's email and next possible period date to manage the notification process. Our end product to users should be a clean, user-friendly, and easy-to-use website login page.
 
 2. **System context:**
 
