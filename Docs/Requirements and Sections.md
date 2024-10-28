@@ -197,6 +197,12 @@ This section does not require user input, but it just displays scientific inform
 **Sketches figures:**  
 Below are the sketches of how the home page and the different screens included are going to look like: 
 
+**Registering page**  
+![MainPage](Images/ProjectSketches/RegisterPage.png)
+
+**Login page**  
+![MainPage](Images/ProjectSketches/LoginPage.png)
+
 **Home page**  
 ![MainPage](Images/ProjectSketches/MainPage.png)
 
