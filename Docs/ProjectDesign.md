@@ -89,7 +89,11 @@ To create an account, the user will have to provide an email address, their age 
 **1.4** **Preliminary thoughts on the transition from the logical design to an implementation:**  
 For the implementation of the Front-End, we will use HTML and CSS, for Back-End Javascript and PHP, and for Database MySQL. For security considerations, we plan to use proper hashing for any sensitive information like passwords using incorporated PHP functions and on the database side comply with relevant data privacy laws, a verification process is also incorporated by sending a specific code to the user's email so they can verify their account. It is also intended that login is checked every time a menu option is chosen since this should be only accessible if the user is logged in.
 
-There are going to be three databases: one that stores the user registering information so the registering, log in and logout processes can run, the verification database to refer to the code provided to verify the user account, and the notification database that saves the user's email and next possible period date to manage the notification process. Our end product to users should be a clean, user-friendly, and easy-to-use website login page.
+There are going to be three databases: one that stores the user registering information so the registering, log in and logout processes can run, the verification database to refer to the code provided to verify the user account, and the notification database that saves the user's email and next possible period date to manage the notification process. Our end product to users should be a clean, user-friendly, and easy-to-use website login page. 
+
+Below there is an ERD diagram databases work together. UserInformation is the main database with all the registering information, its main key is the user ID assigned in SQL. The UserNotification also has ID as a primary key and takes foreign keys periodDate and email from UserInformation to provide the notifications on the appropriate date (periodDate is used to do the prediction and then based on that the email is sent), and UserVerification also has an ID and takes the email as a foreign key to send the email with the verification. 
+
+![ERD-databases](Images/ProjectDFDs/ERDdatabases.png)
 
 2. **System context:**
 
