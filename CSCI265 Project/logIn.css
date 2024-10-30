@@ -1,0 +1,111 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+body{
+    margin:0;
+    padding:0;
+    background: #fff7f7;
+
+}
+input::placeholder {
+    color: #bd9ea7; /* Change this to any desired color */
+    opacity: 3; /* Optional: Set the opacity to make the color fully opaque */
+}
+.container{
+    margin:50px auto;
+    width: 400px;
+    padding:30px;
+    background: #ffe5d9;
+    border-radius: 10px;
+}
+.container h1{
+    margin: 0 0 30px;
+    padding:0;
+    font-size: 30px;
+    color:#6e595f;
+    text-align: center;
+    font-family: "Shrikhand", serif;
+}
+.container .element label{
+    color: #6e595f;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+.container .element input{
+    width:100%;
+    padding:10px 0;
+    color:#6e595f;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #6e595f;
+    margin-bottom: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+}
+.smallCon {
+    color: #6e595f;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 15px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+
+.select-group {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.element2 {
+    color: #6e595f;
+    border: 1px solid #6e595f; 
+    width: 100%; 
+    margin-top: 10px;
+    background-color: transparent;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+.container .element3{
+    color: #6e595f;
+    margin-top: 30px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+.container .element4{
+    color: #6e595f;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 20px;
+}
+.container .element input[type=submit]{
+    background-color: #f4acb7;
+    border: none;
+    text-transform: uppercase;
+    cursor:pointer;
+    padding: 15px;
+    margin-top:30px;
+    border-radius: 40px;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.custom-radio {
+    accent-color: #6e595f;
+    margin-right: 10px;
+}
+.date-custom{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 16px;
+}
+
+
+
+
+
+.container .element input[type=submit]:hover{
+   background-color: #d8e2dc;
+}
