@@ -301,6 +301,6 @@ This diagram takes parts from all of the previous diagrams and combines them. So
 ## **Architecture diagram:** 
 
 ---
-## ![Architecture digram](/Images/ProjectDFDs/ArchitectureDiagram.png)
+## ![Architecture digram](Images/ProjectDFDs/ArchitectureDiagram.png)
 
 The diagram above shows how the web server, the client/the user browser, the period prediction, the notification process and the whole database server interact. For detailed descriptions of the databases, refer to the ERD.
