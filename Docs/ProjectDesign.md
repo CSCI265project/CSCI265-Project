@@ -297,3 +297,10 @@ The data flow on the Education page is minimal, as it primarily involves the use
 ## ![Grand design](Images/ProjectDFDs/overallGraph(DFDOVRGR).png)
 
 This diagram takes parts from all of the previous diagrams and combines them. Some parts have been simplified for ease of reading, such as all user inputs being simplified to ‘User Input’. Each part is discussed in more detail in the above ‘Logical Design’ section.
+
+## **Architecture diagram:** 
+
+---
+## ![Architecture digram](Docs/Images/ProjectDFDs/Architecture Diagram.png)
+
+The diagram above shows how the web server, the client/the user browser, the period prediction, the notification process and the whole database server interact. For detailed descriptions of the databases, refer to the ERD.
