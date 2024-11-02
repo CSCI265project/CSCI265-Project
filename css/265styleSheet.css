@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow-x: hidden;
+    background-color: #fff7f7;
+}
+
+/*Top banner css*/
 .topbar{
     display: flex;
     flex-direction: column;
@@ -10,27 +16,33 @@
     top: 0;
     width: 100%;
     background-color: rgb(255, 203, 213);
+    font-family: 'Shrikhand', serif;
 }
 
+/*Top banner text*/
 .topbar p{
     font-size: 45px;
     padding-top: 20px;
     padding-bottom: 40px;
-    font-family: serif;
+    font-family: 'Shrikhand', serif;
 }
 
+/*Navbar banner*/
 .navbar{
-    position: sticky;
     display: flex;
     flex-direction: row;
     align-content: center;
+    position: sticky;
+    top: 0;left: 0;right: 0;
     font-size: 35px;
     height: auto;
-    position: relative;
     background-color: white;
-    width: 100%;
+    margin: 0px 5px 0px 5px;
+    z-index: 1;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+/*Navbar buttons*/
 .navbar a{
     float: left;
     background-color: rgb(255, 172, 183);
@@ -38,42 +50,27 @@
     margin: 5px 2px 5px 2px;
     width: 20%;
     text-align: center;
-}
-
-.navbar .curr{
-    background-color: aquamarine;
+    color: black;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 .navbar a:hover{
-    background-color: aquamarine;
+    background-color: #d8e2dc;
+    color: red;
+    font-family: 'Cormorant Garamond', serif;
 }
 
+.navbar .curr{
+    background-color: #d8e2dc;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/*Main container settings*/
 main{
-    display: flex;
-    flex-direction: column;
     background-color: rgb(255, 245, 245);
     min-height: 1000px;
     padding: 50px 30px 0px 30px;
 }
-
-.quarter{
-    display: flex;
-    flex-direction: row;
-}
-
-.quarter .month{
-    background-color: aqua;
-    padding: 10px;
-    width: 25%;
-    height: 300px;
-    margin: 10px;
-}
-
-.quarter .month p{
-    text-align: center;
-    font-size: 30px;
-}
-
 
 
 

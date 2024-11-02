@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Calendar</title>
+    <title>C-Clo Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
@@ -15,26 +16,39 @@
 <body>
     <header>
         <div class="topbar">
-            <p>Calendar</p>
+            <p>C-Clo</p>
         </div>
         <div class = "navbar">
-            <a href="homePage.html">Home</a>
-            <a class="curr" href="calendarPage.html">Calendar</a>
+            <a class="curr" href="homePage.html">Home</a>
+            <a href="calendarPage.html">Calendar</a>
             <a href="symptomsPage.html">Symptoms</a>
             <a href="moodsPage.html">Moods</a>
             <a href="healthPage.html">Health</a>
             <a href="educationPage.html">Education</a>
         </div>
     </header>
+    <main id="main-page">
+        <section id="cycle-info">
+            <h2>Current Cycle Day</h2>
+            <div id="current-cycle-day">
+                <h3 id="day-count">17</h3> <!-- Placeholder for dynamic content -->
+            </div>
+        </section>
 
-    <section id="calendar">
-        <div id="calendar-grid" class="calendar-grid">
-            <!-- JavaScript will dynamically generate each month's calendar here -->
-        </div>
-    </section>
+        <section id="user-questions">
+            <div class="question">
+                <p>Did you get your period yet?</p>
+                <a href="#" onclick="addPeriodDate()">Add date to the calendar</a>
+            </div>
 
-    <script src="../calendar.js"></script>
+            <div class="question">
+                <p>Are you feeling unwell?</p>
+                <a href="#">Report symptoms</a>
+                <a href="#">Report moods</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="c-clo-home.js"></script>
 </body>
 </html>
-
-
