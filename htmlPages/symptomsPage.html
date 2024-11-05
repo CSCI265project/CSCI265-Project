@@ -70,44 +70,6 @@
                 height: 25px;
             }
             
-            .box input[type='checkbox']{
-                visibility: hidden;
-            }
-            
-            .container{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 25px;
-                height: 25px;
-                border: 1px solid;
-            }
-            
-            .box:hover .container{
-                background-color: aqua;
-            }
-            
-            .box input:checked~.container {
-                background-color: red;
-            }
-            
-            .container::after {
-                content: "";
-                position: absolute;
-                display: none;
-                left: 7px;
-                top: 3px;
-                width: 5px;
-                height: 10px;
-                border: solid white;
-                border-width: 0 4px 4px 0;
-                transform: rotate(45deg);
-            }
-            
-            .box input:checked~.container::after {
-                display: block;
-            }
-            
             .infoBox{
                 width: 1000px;
                 height: 500px;
@@ -127,7 +89,7 @@
                 margin: 0px 0px 0px 30px;
             }
             
-            .buttons{
+            .buttonContainer{
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 30px;
@@ -135,22 +97,8 @@
                 align-items: center;
             }
             
-            .buttons input{
-                background-color: #f4acb7;
-                border: none;
-                text-transform: uppercase;
-                cursor:pointer;
-                padding: 15px;
-                border-radius: 40px;
-                font-family: "Cormorant Garamond", serif;
-                font-size: 16px;
-                font-weight: bold;
-                color: #fff;
-                width: 150px;
-            }
-
-            .buttons input:hover{
-               background-color: #d8e2dc;
+            .custom-radio{
+                accent-color: #6e595f;
             }
             
         </style>
@@ -187,6 +135,9 @@
             <div class="topbar">
                 <p>Symptoms</p>
             </div>
+            <div class="logout">
+                <button class="button">Logout</button>
+            </div>
         </header>
         <div class="navbar">
                 <a href="homePage.html">Home</a>
@@ -208,65 +159,57 @@
             <div class="checkBoxes">
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="Acne" name="Acne" onclick="display1()" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="Acne" name="Acne" onclick="display1()" autocomplete="off">
                         Acne
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Bloating" name="Bloating" onclick="display2()" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="Bloating" name="Bloating" onclick="display2()" autocomplete="off">
                         Bloating
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="Cramps" name="Cramps" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="Cramps" name="Cramps" autocomplete="off">
                         Cramps
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Dizzyness" name="Dizzyness" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="Dizzyness" name="Dizzyness" autocomplete="off">
                         Dizzyness
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="Fatigue" name="Fatigue" onclick="display1()" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="Fatigue" name="Fatigue" onclick="display1()" autocomplete="off">
                         Fatigue
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Headaches" name="Headaches" onclick="display2()" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="Headaches" name="Headaches" onclick="display2()" autocomplete="off">
                         Headaches
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="box3" name="box3" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="box3" name="box3" autocomplete="off">
                         Lower Back Pain
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="box4" name="box4" autocomplete="off">
-                        <span class="container"></span>
+                        <input class="custom-radio" type="checkbox" id="box4" name="box4" autocomplete="off">
                         Nausea
                     </label>
                     <br>
                 </div>
             </div>
-            <div class="buttons">
+            <div class="buttonContainer">
                 <div>
-                <input type="button" value="Clear all" onclick="clear()">
-                <input type="submit" value="Submit" onclick="submit()">
+                    <button class="button" type="button" value="Clear all" onclick="clear()">Clear all</button>
+                    <button class="button" type="submit" value="Submit" onclick="submit()">Submit</button>
                 </div>
             </div>
             

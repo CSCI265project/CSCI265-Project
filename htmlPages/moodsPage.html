@@ -88,23 +88,9 @@
                 height: 25px;
             }
             
-            .buttons input{
-    background-color: #f4acb7;
-    border: none;
-    text-transform: uppercase;
-    cursor:pointer;
-    padding: 15px;
-    margin-top:30px;
-    border-radius: 40px;
-    font-family: "Cormorant Garamond", serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #fff;
-}
-
-.buttons:hover{
-   background-color: #d8e2dc;
-}
+            .custom-radio{
+                accent-color: #6e595f;
+            }
             
         </style>
         <script>
@@ -135,6 +121,9 @@
             <div class="topbar">
                 <p>Moods</p>
             </div>
+            <div class="logout">
+                <button class="button">Logout</button>
+            </div>
         </header>
         <div class="navbar">
                 <a href="homePage.html">Home</a>
@@ -154,72 +143,72 @@
             <div class="checkBoxes">
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="Restless" name="Restless" onclick="display1()">Restless 
+                        <input class="custom-radio" type="checkbox" id="Restless" name="Restless" onclick="display1()">Restless 
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Sensitive" name="Sensitive" onclick="display2()">Sensitive
+                        <input class="custom-radio" type="checkbox" id="Sensitive" name="Sensitive" onclick="display2()">Sensitive
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Overwhelmed" name="Overwhelmed" >Overwhelmed
+                        <input class="custom-radio" type="checkbox" id="Overwhelmed" name="Overwhelmed" >Overwhelmed
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Sad" name="Sad">Sad
-                    </label>
-                    <br>
-                </div>
-                <div>
-                    <label class="box">
-                        <input type="checkbox" id="Unmotivated" name="Unmotivated" onclick="display1()">Unmotivated
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input type="checkbox" id="Stressed" name="Stressed" onclick="display2()">Stressed
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input type="checkbox" id="Angry" name="Angry">Angry
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input type="checkbox" id=" Emotional" name=" Emotional">Emotional
+                        <input class="custom-radio" type="checkbox" id="Sad" name="Sad">Sad
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="Anxious" name="Anxious" onclick="display1()">Anxious
+                        <input class="custom-radio" type="checkbox" id="Unmotivated" name="Unmotivated" onclick="display1()">Unmotivated
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Moody" name="Moody" onclick="display2()">Moody
+                        <input class="custom-radio" type="checkbox" id="Stressed" name="Stressed" onclick="display2()">Stressed
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id=" Tired" name=" Tired">Tired
+                        <input class="custom-radio" type="checkbox" id="Angry" name="Angry">Angry
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id=" Emotional" name=" Emotional">Emotional
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input type="checkbox" id="Frustrated" name="Frustrated" onclick="display1()">Frustrated
+                        <input class="custom-radio" type="checkbox" id="Anxious" name="Anxious" onclick="display1()">Anxious
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Irritable" name="Irritable" onclick="display2()">Irritable
+                        <input class="custom-radio" type="checkbox" id="Moody" name="Moody" onclick="display2()">Moody
                     </label>
                     <br>
                     <label class="box">
-                        <input type="checkbox" id="Lonely" name="Lonely">Lonely 
+                        <input class="custom-radio" type="checkbox" id=" Tired" name=" Tired">Tired
+                    </label>
+                    <br>
+                </div>
+                <div>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Frustrated" name="Frustrated" onclick="display1()">Frustrated
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Irritable" name="Irritable" onclick="display2()">Irritable
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Lonely" name="Lonely">Lonely 
                     </label>
                     <br>
                 </div>
             </div>
-            <div class="buttons">
-                <input type="button" value="Clear all" onclick="clear()">
-                <input type="submit" value="Submit" onclick="submit()">
+            <div class="buttonContainer">
+                <input class="button" type="button" value="Clear all" onclick="clear()">
+                <input class="button" type="submit" value="Submit" onclick="submit()">
             </div>
             
             <div class="infoBox" id="content1" style="display: none">
