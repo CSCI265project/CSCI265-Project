@@ -41,9 +41,9 @@
                 display: flex;
                 flex-direction: row;
                 min-height: 100px;
-                width: 800px;
+                width: 920px;
                 /*background-color: aqua;*/
-                margin: 50px 0px 25px 0px;
+                margin: 50px 0px 30px 0px;
             }
             
             .checkBoxes div{
@@ -62,6 +62,11 @@
                 -moz-user-select: none;
                 -ms-user-select: none;
                 user-select: none;
+            }
+            
+            .box input{
+                width: 25px;
+                height: 25px;
             }
             
             .infoBox{
@@ -83,19 +88,21 @@
                 margin: 0px 0px 0px 30px;
             }
             
-            .box input{
-                width: 25px;
-                height: 25px;
+            .buttonContainer{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 30px;
+                width: 100%;
+                align-items: center;
             }
             
             .custom-radio{
                 accent-color: #6e595f;
             }
-            
         </style>
         <script>
             function display1(){
-                var checkBox = document.getElementById("Acne");
+                var checkBox = document.getElementById("Restless");
                 var text = document.getElementById("content1");
                 if(checkBox.checked == true){
                     text.style.display = "block";
@@ -105,13 +112,225 @@
             }
             
             function display2(){
-                var checkBox = document.getElementById("Bloating");
+                var checkBox = document.getElementById("Sensitive");
                 var text = document.getElementById("content2");
                 if(checkBox.checked == true){
-                    content2.style.display = "block";
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display3(){
+                var checkBox = document.getElementById("Overwhelmed");
+                var text = document.getElementById("content3");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display4(){
+                var checkBox = document.getElementById("Sad");
+                var text = document.getElementById("content4");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display5(){
+                var checkBox = document.getElementById("Unmotivated");
+                var text = document.getElementById("content5");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display6(){
+                var checkBox = document.getElementById("Stressed");
+                var text = document.getElementById("content6");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display7(){
+                var checkBox = document.getElementById("Angry");
+                var text = document.getElementById("content7");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display8(){
+                var checkBox = document.getElementById("Emotional");
+                var text = document.getElementById("content8");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display9(){
+                var checkBox = document.getElementById("Anxious");
+                var text = document.getElementById("content9");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display10(){
+                var checkBox = document.getElementById("Moody");
+                var text = document.getElementById("content10");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display11(){
+                var checkBox = document.getElementById("Tired");
+                var text = document.getElementById("content11");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display12(){
+                var checkBox = document.getElementById("Frustrated");
+                var text = document.getElementById("content12");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display13(){
+                var checkBox = document.getElementById("Irritable");
+                var text = document.getElementById("content13");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display14(){
+                var checkBox = document.getElementById("Lonely");
+                var text = document.getElementById("content14");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function submit(){
+                if(document.getElementById("Restless").checked){
+                    display1();
+                } else{
+                    content1.style.display = "none";
+                }
+                
+                if(document.getElementById("Sensitive").checked){
+                    display2();
                 } else{
                     content2.style.display = "none";
                 }
+                
+                if(document.getElementById("Overwhelmed").checked){
+                    display3();
+                } else{
+                    content3.style.display = "none";
+                }
+                
+                if(document.getElementById("Sad").checked){
+                    display4();
+                } else{
+                    content4.style.display = "none";
+                }
+                
+                if(document.getElementById("Unmotivated").checked){
+                    display5();
+                } else{
+                    content5.style.display = "none";
+                }
+                
+                if(document.getElementById("Stressed").checked){
+                    display6();
+                } else{
+                    content6.style.display = "none";
+                }
+                
+                if(document.getElementById("Angry").checked){
+                    display7();
+                } else{
+                    content7.style.display = "none";
+                }
+                
+                if(document.getElementById("Emotional").checked){
+                    display8();
+                } else{
+                    content8.style.display = "none";
+                }
+                
+                if(document.getElementById("Anxious").checked){
+                    display9();
+                } else{
+                    content9.style.display = "none";
+                }
+                
+                if(document.getElementById("Moody").checked){
+                    display10();
+                } else{
+                    content10.style.display = "none";
+                }
+                
+                if(document.getElementById("Tired").checked){
+                    display11();
+                } else{
+                    content11.style.display = "none";
+                }
+                
+                if(document.getElementById("Frustrated").checked){
+                    display12();
+                } else{
+                    content12.style.display = "none";
+                }
+                
+                if(document.getElementById("Irritable").checked){
+                    display13();
+                } else{
+                    content13.style.display = "none";
+                }
+                
+                if(document.getElementById("Lonely").checked){
+                    display14();
+                } else{
+                    content14.style.display = "none";
+                }
+            }
+            
+            function clearAll(){
+                document.querySelectorAll('input[type="checkbox"]')
+                    .forEach(el => el.checked = false);
+                submit();
             }
         </script>
     </head>
@@ -143,87 +362,186 @@
             <div class="checkBoxes">
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Restless" name="Restless" onclick="display1()">Restless 
+                        <input class="custom-radio" type="checkbox" id="Restless" name="Restless"  autocomplete="off">Restless 
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Sensitive" name="Sensitive" onclick="display2()">Sensitive
+                        <input class="custom-radio" type="checkbox" id="Sensitive" name="Sensitive" autocomplete="off">Sensitive
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Overwhelmed" name="Overwhelmed" >Overwhelmed
+                        <input class="custom-radio" type="checkbox" id="Overwhelmed" name="Overwhelmed" autocomplete="off">Overwhelmed
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Sad" name="Sad">Sad
-                    </label>
-                    <br>
-                </div>
-                <div>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Unmotivated" name="Unmotivated" onclick="display1()">Unmotivated
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Stressed" name="Stressed" onclick="display2()">Stressed
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Angry" name="Angry">Angry
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id=" Emotional" name=" Emotional">Emotional
+                        <input class="custom-radio" type="checkbox" id="Sad" name="Sad" autocomplete="off">Sad
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Anxious" name="Anxious" onclick="display1()">Anxious
+                        <input class="custom-radio" type="checkbox" id="Unmotivated" name="Unmotivated" autocomplete="off">Unmotivated
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Moody" name="Moody" onclick="display2()">Moody
+                        <input class="custom-radio" type="checkbox" id="Stressed" name="Stressed" autocomplete="off">Stressed
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id=" Tired" name=" Tired">Tired
+                        <input class="custom-radio" type="checkbox" id="Angry" name="Angry" autocomplete="off">Angry
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Emotional" name="Emotional" autocomplete="off">Emotional
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Frustrated" name="Frustrated" onclick="display1()">Frustrated
+                        <input class="custom-radio" type="checkbox" id="Anxious" name="Anxious" autocomplete="off">Anxious
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Irritable" name="Irritable" onclick="display2()">Irritable
+                        <input class="custom-radio" type="checkbox" id="Moody" name="Moody" autocomplete="off">Moody
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Lonely" name="Lonely">Lonely 
+                        <input class="custom-radio" type="checkbox" id="Tired" name="Tired" autocomplete="off">Tired
+                    </label>
+                    <br>
+                </div>
+                <div>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Frustrated" name="Frustrated" autocomplete="off">Frustrated
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Irritable" name="Irritable" autocomplete="off">Irritable
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Lonely" name="Lonely" autocomplete="off">Lonely 
                     </label>
                     <br>
                 </div>
             </div>
+            
             <div class="buttonContainer">
-                <input class="button" type="button" value="Clear all" onclick="clear()">
-                <input class="button" type="submit" value="Submit" onclick="submit()">
+                <div>
+                    <input class="button" type="button" value="Clear all" onclick="clearAll()">
+                    <input class="button" type="submit" value="Submit" onclick="submit()">
+                </div>
             </div>
             
             <div class="infoBox" id="content1" style="display: none">
                 <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Antibiotics).</p>
+                <p>Info on some stuff (Restless).</p>
                 <ul>
-                    <li>Antibiotics</li>
+                    <li>Restless</li>
                     <li>some other stuff</li>
                 </ul>
             </div>
             <div class="infoBox" id="content2" style="display: none">
                 <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Bloating).</p>
+                <p>Info on some stuff (Sensitive).</p>
                 <ul>
-                    <li>Antibiotics</li>
+                    <li>Sensitive</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content3" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Overwhelmed).</p>
+                <ul>
+                    <li>Overwhelmed</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content4" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Sad).</p>
+                <ul>
+                    <li>Sad</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content5" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Unmotivated).</p>
+                <ul>
+                    <li>Unmotivated</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content6" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Stressed).</p>
+                <ul>
+                    <li>Stressed</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content7" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Angry).</p>
+                <ul>
+                    <li>Angry</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content8" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Emotional).</p>
+                <ul>
+                    <li>Emotional</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content9" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Anxious).</p>
+                <ul>
+                    <li>Anxious</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content10" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Moody).</p>
+                <ul>
+                    <li>Moody</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content11" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Tired).</p>
+                <ul>
+                    <li>Tired</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content12" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Frustrated).</p>
+                <ul>
+                    <li>Frustrated</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+             <div class="infoBox" id="content13" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Irritable).</p>
+                <ul>
+                    <li>Irritable</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content14" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Lonely).</p>
+                <ul>
+                    <li>Lonely</li>
                     <li>some other stuff</li>
                 </ul>
             </div>

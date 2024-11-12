@@ -100,7 +100,6 @@
             .custom-radio{
                 accent-color: #6e595f;
             }
-            
         </style>
         <script>
             function display1(){
@@ -123,8 +122,120 @@
                 }
             }
             
-            function clear(){
-                $('input[type="checkbox"]:checked').prop('checked',false);
+            function display3(){
+                var checkBox = document.getElementById("Cramps");
+                var text = document.getElementById("content3");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display4(){
+                var checkBox = document.getElementById("Dizzyness");
+                var text = document.getElementById("content4");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display5(){
+                var checkBox = document.getElementById("Fatigue");
+                var text = document.getElementById("content5");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display6(){
+                var checkBox = document.getElementById("Headaches");
+                var text = document.getElementById("content6");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display7(){
+                var checkBox = document.getElementById("LBP");
+                var text = document.getElementById("content7");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function display8(){
+                var checkBox = document.getElementById("Nausea");
+                var text = document.getElementById("content8");
+                if(checkBox.checked == true){
+                    text.style.display = "block";
+                } else{
+                    text.style.display = "none";
+                }
+            }
+            
+            function submit(){
+                if(document.getElementById("Acne").checked){
+                    display1();
+                } else{
+                    content1.style.display = "none";
+                }
+                
+                if(document.getElementById("Bloating").checked){
+                    display2();
+                } else{
+                    content2.style.display = "none";
+                }
+                
+                if(document.getElementById("Cramps").checked){
+                    display3();
+                } else{
+                    content3.style.display = "none";
+                }
+                
+                if(document.getElementById("Dizzyness").checked){
+                    display4();
+                } else{
+                    content4.style.display = "none";
+                }
+                
+                if(document.getElementById("Fatigue").checked){
+                    display5();
+                } else{
+                    content5.style.display = "none";
+                }
+                
+                if(document.getElementById("Headaches").checked){
+                    display6();
+                } else{
+                    content6.style.display = "none";
+                }
+                
+                if(document.getElementById("LBP").checked){
+                    display7();
+                } else{
+                    content7.style.display = "none";
+                }
+                
+                if(document.getElementById("Nausea").checked){
+                    display8();
+                } else{
+                    content8.style.display = "none";
+                }
+            }
+            
+            function clearAll(){
+                document.querySelectorAll('input[type="checkbox"]')
+                    .forEach(el => el.checked = false);
+                submit();
             }
         </script>
     </head>
@@ -159,12 +270,12 @@
             <div class="checkBoxes">
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Acne" name="Acne" onclick="display1()" autocomplete="off">
+                        <input class="custom-radio" type="checkbox" id="Acne" name="Acne" autocomplete="off">
                         Acne
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Bloating" name="Bloating" onclick="display2()" autocomplete="off">
+                        <input class="custom-radio" type="checkbox" id="Bloating" name="Bloating" autocomplete="off">
                         Bloating
                     </label>
                     <br>
@@ -183,24 +294,24 @@
                 </div>
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Fatigue" name="Fatigue" onclick="display1()" autocomplete="off">
+                        <input class="custom-radio" type="checkbox" id="Fatigue" name="Fatigue" autocomplete="off">
                         Fatigue
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Headaches" name="Headaches" onclick="display2()" autocomplete="off">
+                        <input class="custom-radio" type="checkbox" id="Headaches" name="Headaches" autocomplete="off">
                         Headaches
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="box3" name="box3" autocomplete="off">
+                        <input class="custom-radio" type="checkbox" id="LBP" name="box3" autocomplete="off">
                         Lower Back Pain
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="box4" name="box4" autocomplete="off">
+                        <input class="custom-radio" type="checkbox" id="Nausea" name="box4" autocomplete="off">
                         Nausea
                     </label>
                     <br>
@@ -208,7 +319,7 @@
             </div>
             <div class="buttonContainer">
                 <div>
-                    <button class="button" type="button" value="Clear all" onclick="clear()">Clear all</button>
+                    <button class="button" type="submit" value="Clear all" onclick="clearAll()">Clear all</button>
                     <button class="button" type="submit" value="Submit" onclick="submit()">Submit</button>
                 </div>
             </div>
@@ -226,6 +337,54 @@
                 <p>Info on some stuff (Bloating).</p>
                 <ul>
                     <li>Antibiotics</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content3" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Cramps).</p>
+                <ul>
+                    <li>Cramps</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content4" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Dizzyness).</p>
+                <ul>
+                    <li>Dizzyness</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content5" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Fatigue).</p>
+                <ul>
+                    <li>Fatigue</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content6" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Headaches).</p>
+                <ul>
+                    <li>Headaches</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content7" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Lower Back Pain).</p>
+                <ul>
+                    <li>Lower Back Pain</li>
+                    <li>some other stuff</li>
+                </ul>
+            </div>
+            <div class="infoBox" id="content8" style="display: none">
+                <img src="../htmlImgs/c3.jpg">
+                <p>Info on some stuff (Nausea).</p>
+                <ul>
+                    <li>Nausea</li>
                     <li>some other stuff</li>
                 </ul>
             </div>
