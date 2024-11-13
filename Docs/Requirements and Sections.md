@@ -163,7 +163,7 @@ The discussions below list the collection of available sections a user might nav
 * Education page(s): Scientific information on women's health and wellness related to diseases, such as cancer, and infections.
 
 **Registering screen:**  
-The user creates her account by providing their name, email, age, last period date, flow type, regularity, duration, and password. This will be the first thing that the user will see when entering the site.
+The user creates her account by providing their name, email, age, last period date, flow type, regularity, duration, and password. If the user doesn't input valid data the registering process cannot be successful and some error messages should be displayed.
 
 **Login screen:**   
 The user accesses her account with her email and password. The user can navigate to this screen from the registration screen.
