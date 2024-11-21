@@ -151,7 +151,7 @@ Implementing features like alternative text for images, high-contrast themes, an
 The images shown below are intended to be exact images of how our website will look like. However, if certain changes are necessary in the structure and/or position of the elements to include in each section of the web page, they will be done. We also assume the colorimetry won't change during the development of it.    
 
 **Screen and menu navigation**  
-The discussions below list the collection of available sections a user might navigate through during a typical day, with short descriptions for each.
+The discussions below list the collection of available sections a user might navigate through during a typical day, the user should be able to open any of the menu options from the menu options they are currently located in. Below, there are some short descriptions for each.
 
 * Registering: The user provides data about herself and her period to create an account  
 * Login: The user logs in by providing their mail and password  
