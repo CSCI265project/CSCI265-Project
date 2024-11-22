@@ -79,7 +79,10 @@ The project will have 4 branchs total 3 core branchs for coding purposes and one
  
  3 core branches: testing, production and development. The purpose and guidelines for the following branches are as follows:
 
-* Testing: this branch will represent when the dev thinks the code is ready to be implemented, if the result is correct and error free it will become the new face of the product  
+* Testing: this branch will represent when the dev thinks the code is ready to be implemented, if the result is correct and error free it will become the new face of the product. There are two main directorys in the Testing branch,
+  - Testing reports: This directory holds documents(a likely name for a doc: TestingReports.md) that show what test cases we have and which are passing and failing.
+  - Testing code: This is where the actauly code, test code, testing scripts, etc…. are held.
+     
 * Production:  This will be the branch where the most recently tested and error-free code, most likely be the branch for submission   
 * Development: The branch where new code approved by the Repo lead and or understudy has been approved but has not been thoroughly tested yet in the testing branch.
 
