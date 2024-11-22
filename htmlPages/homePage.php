@@ -1,3 +1,7 @@
+<?php
+    require "../sourcePHP/functions.php";
+    check_login();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -85,20 +89,35 @@
         <div class="topbar">
             <p>C-Clo</p>
         </div>
-        <div class="logout">
-                <button class="button">Logout</button>
-        </div>
+        <!--<div class="logout">
+            <button class="button">Logout</button>
+        </div>-->
+        <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
+            <button type="submit" class="button">Logout</button>
+        </form>
+        
+               
     </header>
     <div class = "navbar">
-        <a class="curr" href="homePage.html">Home</a>
-        <a href="calendarPage.html">Calendar</a>
-        <a href="symptomsPage.html">Symptoms</a>
-        <a href="moodsPage.html">Moods</a>
-        <a href="healthPage.html">Health</a>
-        <a href="educationPage.html">Education</a>
+        <a class="curr" href="homePage.php">Home</a>
+        <a href="calendarPage.php">Calendar</a>
+        <a href="symptomsPage.php">Symptoms</a>
+        <a href="moodsPage.php">Moods</a>
+        <a href="healthPage.php">Health</a>
+        <a href="educationPage.php">Education</a>
     </div>
     
     <main id="main-page">
+        <?php if(check_login(false)):?>
+            <span style="font-size: 40px; color: #6e595f; font-family: 'Shrikhand', serif;">
+                Hi, <?= htmlspecialchars($_SESSION['USER']->username) ?>
+            </span>
+            <?php if(!check_verified()):?>
+                <a href="../sourcePHP/verify.php">
+                    <button class="button">Verify Profile</button>
+                </a>
+            <?php endif;?>
+        <?php endif;?>
         <div>
             <div id="circle">
                 <div id="cycle-info">
@@ -118,8 +137,8 @@
 
                 <div class="question">
                     <p>Are you feeling unwell?</p>
-                    <a href="symptomsPage.html">Report symptoms</a>
-                    <a href="moodsPage.html">Report moods</a>
+                    <a href="symptomsPage.php">Report symptoms</a>
+                    <a href="moodsPage.php">Report moods</a>
                 </div>
             </section>
         </div>

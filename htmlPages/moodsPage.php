@@ -1,3 +1,8 @@
+<?php
+    require "../sourcePHP/functions.php";
+    check_login();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -340,18 +345,18 @@
             <div class="topbar">
                 <p>Moods</p>
             </div>
-            <div class="logout">
-                <button class="button">Logout</button>
-            </div>
+            <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
+                <button type="submit" class="button">Logout</button>
+            </form>
         </header>
         <div class="navbar">
-                <a href="homePage.html">Home</a>
-                <a href="calendarPage.html">Calendar</a>
-                <a href="symptomsPage.html">Symptoms</a>
-                <a class="curr" href="moodsPage.html">Moods</a>
-                <a href="healthPage.html">Health</a>
-                <a href="educationPage.html">Education</a>
-            </div>
+            <a href="homePage.php">Home</a>
+            <a href="calendarPage.php">Calendar</a>
+            <a href="symptomsPage.php">Symptoms</a>
+            <a class="curr" href="moodsPage.php">Moods</a>
+            <a href="healthPage.php">Health</a>
+            <a href="educationPage.php">Education</a>
+        </div>
         <main>
             <div class="disclaimer">
                 <p class="p1">Report your moods by checking the boxes below.</p>
@@ -447,7 +452,7 @@
                 </ul>
             </div>
             <div class="infoBox" id="content3" style="display: none">
-                <p> If you are feeling Overwhelmed, possible methods to help you could be meditation, being kind to yourself, or writing your feeling could give you more structure and security. A more detailed article on how to deal with being overwhelmed: <a href = "https://www.mentalhealthfirstaid.org/2021/03/how-to-take-care-of-yourself-when-youre-feeling-overwhelmed/"> Methods you could use when feeling overwhelmed</a></p>
+                <p> If you are feeling Overwhelmed, possible methods to help you could be meditation, being kind to yourself, or writing your feeling could give you more structure and security. A more detailed article on how to deal with overwhelmed: <a href = "https://www.mentalhealthfirstaid.org/2021/03/how-to-take-care-of-yourself-when-youre-feeling-overwhelmed/"> Methods you could use when feeling overwhelmed</a></p>
                 
                 <ul>
                 <ul>
@@ -464,13 +469,13 @@
             </div>
             <div class="infoBox" id="content5" style="display: none">
                 
-                <p> Feeling Unmotivated is natural at certain times when things are uncertain, stressful, new, etc... but that feeling of not wanting to do things can be conquered. A article on how to overcome and understand unmotivation: <a href="https://www.betterhelp.com/advice/general/why-am-i-feeling-unmotivated-school-work-and-more/">What to do when unmotivated?</a></p> 
+                <p> Feeling Unmotivated is natural at certain times when things are uncertain, stressful, new, etc... but that feeling of not wanting to do things can be conquered. A article on how to overcome motivation: <a href="https://www.forbes.com/sites/nelldebevoise/2024/07/05/what-to-do-when-you-are-feeling-unmotivated/">What to do when unmotivated?</a></p> 
                 <ul>
                 </ul>
             </div>
             <div class="infoBox" id="content6" style="display: none">
                 
-                <p> Stress and being overwhelmed are very closely related, the same methods can be used like meditation, being kind to yourself, writing your feeling could give you more structure and security, exercise like a jog or walk for example can also ease a stressed mind. Prolonged stress can have serve effects on both mental and physical health. We have 2 links attached to help with stress:<a href="https://www.womenshealthmag.com/health/a26306917/fast-stress-relief-techniques/?utm_source=google&utm_medium=cpc&utm_campaign=mgu_ga_whm_md_dsa_prog_mix_ca_19960292379&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrClKLvWnWiW9FLvTYK-NGgxu-aPML7rUwPMHiWcBmPcE-bNkSlKAekaAh3GEALw_wcB">Dealing with stress(Womans Health Magazine)</a> and <a href="https://my.clevelandclinic.org/health/diseases/11874-stress">Dealing with stress(Cleveland Clinic)</a> </p> 
+                <p> Stress and being overwhelmed are very closely related, the same methods can be used like meditation, being kind to yourself, writing your feeling could give you more structure and security, exercise like a jog or walk for example can also ease a stressed mind. Prolonged stress can have serve effects on both mental and physical health. We have 2 links attached to help with stress: <a href="https://www.womenshealthmag.com/health/a26306917/fast-stress-relief-techniques/?utm_source=google&utm_medium=cpc&utm_campaign=mgu_ga_whm_md_dsa_prog_mix_ca_19960292379&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrClKLvWnWiW9FLvTYK-NGgxu-aPML7rUwPMHiWcBmPcE-bNkSlKAekaAh3GEALw_wcB">Dealing with stress(Womans Health Magazine)</a> and <a href="https://my.clevelandclinic.org/health/diseases/11874-stress">Dealing with stress(Cleveland Clinic)</a> </p> 
             
                 <ul>
                     

@@ -1,3 +1,8 @@
+<?php
+    require "../sourcePHP/functions.php";
+    check_login();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -131,17 +136,17 @@
         <div class="topbar">
             <p>Health</p>
         </div>
-        <div class="logout">
-                <button class="button">Logout</button>
-        </div>
+        <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
+            <button type="submit" class="button">Logout</button>
+        </form>
     </header>
     <div class="navbar">
-        <a href="homePage.html">Home</a>
-        <a href="calendarPage.html">Calendar</a>
-        <a href="symptomsPage.html">Symptoms</a>
-        <a href="moodsPage.html">Moods</a>
-        <a class="curr" href="healthPage.html">Health</a>
-        <a href="educationPage.html">Education</a>
+        <a href="homePage.php">Home</a>
+        <a href="calendarPage.php">Calendar</a>
+        <a href="symptomsPage.php">Symptoms</a>
+        <a href="moodsPage.php">Moods</a>
+        <a class="curr" href="healthPage.php">Health</a>
+        <a href="educationPage.php">Education</a>
     </div>
 
     <!--Video-->

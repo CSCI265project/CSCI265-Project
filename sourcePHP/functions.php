@@ -1,40 +1,46 @@
 <?php
 
-session_start();
-
+if (session_status() === PHP_SESSION_NONE && !defined('TEST_ENVIRONMENT')) {
+    session_start();
+}
 function signup($data){
     $errors = array();
 
     //validate
     if(!preg_match('/^[a-zA-Z]+$/', $data['username'])){
-        $errors[] = "Please enter a valid username";
+        $errors[] = "<div style='color: #6979c2; font-family: \"Cormorant Garamond\", serif; font-size: 20px;'>Please enter a valid username</div>";
     }
     if(!filter_var($data['email'],FILTER_VALIDATE_EMAIL)){
-		$errors[] = "Please enter a valid email";
+		$errors[] = "<div style='color: #6979c2; font-family: \"Cormorant Garamond\", serif; font-size: 20px;'>Please enter a valid email</div>";
 	}
     if(strlen(trim($data['password'])) < 4){
-		$errors[] = "Password must be atleast 4 chars long";
+		$errors[] = "<div style='color: #6979c2; font-family: \"Cormorant Garamond\", serif; font-size: 20px;'>Password must be atleast 4 chars long</div>";
 	}
 
     $check = database_run("select * from users where email = :email limit 1",['email'=>$data['email']]);
 	if(is_array($check)){
-		$errors[] = "That email already exists";
+		$errors[] = "<div style='color: #6979c2; font-family: \"Cormorant Garamond\", serif; font-size: 20px;'>That email already exists</div>";
 	}
 
     $check = database_run("select * from users where username = :username limit 1",['username'=>$data['username']]);
 	if(is_array($check)){
-		$errors[] = "That username already exists";
+		$errors[] = "<div style='color: #6979c2; font-family: \"Cormorant Garamond\", serif; font-size: 20px;'>That username already exists</div>";
 	}
     
     if(count($errors) == 0){
 
         $arr['username'] = $data['username'];
 		$arr['email'] = $data['email'];
+		$arr['age'] = $data['age'];
 		$arr['password'] = password_hash($data['password'],PASSWORD_DEFAULT);
-        $arr['date'] = date("Y-m-d H:i:s");
+        $arr['date'] = $data['date'];
+		$arr['flow'] = $data['flow'];
+        $arr['type'] = $data['type'];
+        $arr['duration'] = $data['duration'];
+		$arr['notifications'] = ($data['notifications'] === 'yes') ? 1 : 0; 
 
-		$query = "insert into users (username,email,password,date) values 
-		(:username,:email,:password,:date)";
+		$query = "insert into users (username,email,age,password,date,flow,type,duration,notifications) values 
+		(:username,:email,:age,:password,:date,:flow,:type,:duration,:notifications)";
 
 		database_run($query,$arr);
 	}
@@ -42,6 +48,7 @@ function signup($data){
 }
 
 function login($data){
+	global $testMode;
 	$errors = array();
  
 	//validate 
@@ -71,8 +78,10 @@ function login($data){
                 $_SESSION['LOGGED_IN'] = true;
 
                 // Redirect to the profile or another protected page
-                header("Location: profile.php");
-                exit(); // Use exit() to stop further execution
+                if (!$testMode) {
+                    header("Location: /cClophp/CSCI265-Project-development/htmlPages/homePage.php");
+                    exit();
+                }
             } else {
                 // If the password is incorrect
                 $errors[] = "Wrong email or password";
@@ -86,7 +95,7 @@ function login($data){
 }
 function database_run($query,$vars = array()){
 
-    $string = "mysql:host=localhost;dbname=verify_db";
+	$string = "mysql:unix_socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock;dbname=verify_db";
     $con = new PDO($string, 'root','');
 
     if(!$con){
