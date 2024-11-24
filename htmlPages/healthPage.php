@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html tutorial, css tutorial">
     <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="icon" type="image/x-icon" href="../htmlImgs/headerImgs/logoCopy.png">
 
     <!--<link rel="stylesheet" href="265styleSheet.css">-->
     <!--Font Style From Google-->
@@ -133,9 +134,12 @@
 
     <!--Nav Bar-->
     <header>
+        <img class="hL" src="../htmlImgs/headerImgs/headerL.png">
         <div class="topbar">
             <p>Health</p>
+            <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
         </div>
+        <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
         <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
             <button type="submit" class="button">Logout</button>
         </form>
@@ -178,7 +182,7 @@
     <div class="faq-container">
         <div class="faq-item">
             <button class="faq-question">How often am I supposed to change my pad/tampon?
-                <img src="down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+                <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
             <div class="faq-answer">
                 <p>You should change your pad or tampon every 4–6 hours, or as needed depending on your flow.</p>
             </div>
@@ -186,7 +190,7 @@
 
         <div class="faq-item">
             <button class="faq-question">Can I exercise during my period?
-                <img src="down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+                <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
             <div class="faq-answer">
                 <p>Yes, exercising during your period is generally safe and can help reduce cramps and improve mood.</p>
             </div>
@@ -194,7 +198,7 @@
 
         <div class="faq-item">
             <button class="faq-question">Why do I experience cravings before my period?
-                <img src="down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+                <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
             <div class="faq-answer">
                 <p>Hormonal changes during your menstrual cycle can affect your appetite, leading to cravings,
                     especially for carbohydrates and sweets.</p>

@@ -9,7 +9,7 @@
         <title>Moods</title>
         <meta charset="utf=8">
         <link rel="stylesheet" href="../css/265styleSheet.css">
-        <link rel="icon" type="image/x-icon" href="">
+        <link rel="icon" type="image/x-icon" href="../htmlImgs/headerImgs/logoCopy.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -76,7 +76,7 @@
             
             .infoBox{
                 width: 1000px;
-                height: 500px;
+                min-height: 100px;
                 border: solid 3px;
                 border-color: rgb(255, 172, 183);
                 margin: 0px 0px 50px 0px;
@@ -96,7 +96,7 @@
             .buttonContainer{
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 width: 100%;
                 align-items: center;
             }
@@ -342,9 +342,12 @@
 
     <body>
         <header>
+            <img class="hL" src="../htmlImgs/headerImgs/headerL.png">
             <div class="topbar">
                 <p>Moods</p>
+                <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
             </div>
+            <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
             <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
                 <button type="submit" class="button">Logout</button>
             </form>
@@ -367,65 +370,65 @@
             <div class="checkBoxes">
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Restless" name="Restless"  autocomplete="off">Restless 
+                        <input class="custom-radio" type="checkbox" id="Restless" name="Restless"  autocomplete="off"> Restless 
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Sensitive" name="Sensitive" autocomplete="off">Sensitive
+                        <input class="custom-radio" type="checkbox" id="Sensitive" name="Sensitive" autocomplete="off"> Sensitive
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Overwhelmed" name="Overwhelmed" autocomplete="off">Overwhelmed
+                        <input class="custom-radio" type="checkbox" id="Overwhelmed" name="Overwhelmed" autocomplete="off"> Overwhelmed
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Sad" name="Sad" autocomplete="off">Sad
-                    </label>
-                    <br>
-                </div>
-                <div>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Unmotivated" name="Unmotivated" autocomplete="off">Unmotivated
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Stressed" name="Stressed" autocomplete="off">Stressed
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Angry" name="Angry" autocomplete="off">Angry
-                    </label>
-                    <br>
-                    <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Emotional" name="Emotional" autocomplete="off">Emotional
+                        <input class="custom-radio" type="checkbox" id="Sad" name="Sad" autocomplete="off"> Sad
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Anxious" name="Anxious" autocomplete="off">Anxious
+                        <input class="custom-radio" type="checkbox" id="Unmotivated" name="Unmotivated" autocomplete="off"> Unmotivated
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Moody" name="Moody" autocomplete="off">Moody
+                        <input class="custom-radio" type="checkbox" id="Stressed" name="Stressed" autocomplete="off"> Stressed
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Tired" name="Tired" autocomplete="off">Tired
+                        <input class="custom-radio" type="checkbox" id="Angry" name="Angry" autocomplete="off"> Angry
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Emotional" name="Emotional" autocomplete="off"> Emotional
                     </label>
                     <br>
                 </div>
                 <div>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Frustrated" name="Frustrated" autocomplete="off">Frustrated
+                        <input class="custom-radio" type="checkbox" id="Anxious" name="Anxious" autocomplete="off"> Anxious
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Irritable" name="Irritable" autocomplete="off">Irritable
+                        <input class="custom-radio" type="checkbox" id="Moody" name="Moody" autocomplete="off"> Moody
                     </label>
                     <br>
                     <label class="box">
-                        <input class="custom-radio" type="checkbox" id="Lonely" name="Lonely" autocomplete="off">Lonely 
+                        <input class="custom-radio" type="checkbox" id="Tired" name="Tired" autocomplete="off"> Tired
+                    </label>
+                    <br>
+                </div>
+                <div>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Frustrated" name="Frustrated" autocomplete="off"> Frustrated
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Irritable" name="Irritable" autocomplete="off"> Irritable
+                    </label>
+                    <br>
+                    <label class="box">
+                        <input class="custom-radio" type="checkbox" id="Lonely" name="Lonely" autocomplete="off"> Lonely 
                     </label>
                     <br>
                 </div>
@@ -437,104 +440,75 @@
                     <input class="button" type="submit" value="Submit" onclick="submit()">
                 </div>
             </div>
-            
-                   <div class="infoBox" id="content1" style="display: none">
-                <p> If you are feeling Restless,  possible methods to help you could be meditation, breathing exercises, or exercise like a jog or walk. A more detailed article on how to deal with restlessness: <a href = "https://www.brightside.com/blog/overcoming-restlessness-helpful-methods/?srsltid=AfmBOoq0P-rJvwbuYTs-42o3-Wkl6fb4fe95mpGUgZ2tZKt6HDmzqqOO">5 methods for dealing with restlessness</a></p>
-               
-                <ul>
-    
-              </ul>
+            <div class="infoBox" id="content1" style="display: none">
+                <img src="../htmlImgs/moodsImgs/restless.png">
+                <p> If you are feeling Restless,  possible methods to help you could be meditation, breathing exercises, or exercise like a jog or walk. A more detailed article on how to deal with restlessness:</p>
+                <a href = "https://www.brightside.com/blog/overcoming-restlessness-helpful-methods/?srsltid=AfmBOoq0P-rJvwbuYTs-42o3-Wkl6fb4fe95mpGUgZ2tZKt6HDmzqqOO">5 methods for dealing with restlessness</a>
             </div>
             <div class="infoBox" id="content2" style="display: none">
-                <p> Sensitivity is not necessarily a bad thing, do some self-reflection, if you believe you are highly sensitive a great article that could help you: <a href="https://psychcentral.com/health/why-am-i-so-sensitive">High sensitivity understanding</a></p> 
-                
-                <ul>
-                </ul>
+                <img src="../htmlImgs/moodsImgs/sensitive.png">
+                <p> Sensitivity is not necessarily a bad thing, do some self-reflection, if you believe you are highly sensitive a great article that could help you:</p>
+                <a href="https://psychcentral.com/health/why-am-i-so-sensitive">High sensitivity understanding</a>
             </div>
             <div class="infoBox" id="content3" style="display: none">
-                <p> If you are feeling Overwhelmed, possible methods to help you could be meditation, being kind to yourself, or writing your feeling could give you more structure and security. A more detailed article on how to deal with overwhelmed: <a href = "https://www.mentalhealthfirstaid.org/2021/03/how-to-take-care-of-yourself-when-youre-feeling-overwhelmed/"> Methods you could use when feeling overwhelmed</a></p>
-                
-                <ul>
-                <ul>
-                    
-                </ul>
+                <img src="../htmlImgs/moodsImgs/overwhelmed.png">
+                <p> If you are feeling Overwhelmed, possible methods to help you could be meditation, being kind to yourself, or writing your feeling could give you more structure and security. A more detailed article on how to deal with overwhelmed:</p>
+                <a href = "https://www.mentalhealthfirstaid.org/2021/03/how-to-take-care-of-yourself-when-youre-feeling-overwhelmed/"> Methods you could use when feeling overwhelmed</a>
             </div>
             <div class="infoBox" id="content4" style="display: none">
-                
-                <p> Feeling Sadness is a part of being human, if you are feeling sadness and want to know some methods and understanding of how to deal with sadness are in this great article: <a href="https://www.cdc.gov/howrightnow/emotion/sadness/index.html">How Right Now?</a></p> 
-                
-                <ul>
-                
-                </ul>
+                <img src="../htmlImgs/moodsImgs/sad.png">
+                <p> Feeling Sadness is a part of being human, if you are feeling sadness and want to know some methods and understanding of how to deal with sadness are in this great article:</p>
+                <a href="https://www.cdc.gov/howrightnow/emotion/sadness/index.html">How Right Now?</a>
             </div>
             <div class="infoBox" id="content5" style="display: none">
-                
-                <p> Feeling Unmotivated is natural at certain times when things are uncertain, stressful, new, etc... but that feeling of not wanting to do things can be conquered. A article on how to overcome motivation: <a href="https://www.forbes.com/sites/nelldebevoise/2024/07/05/what-to-do-when-you-are-feeling-unmotivated/">What to do when unmotivated?</a></p> 
-                <ul>
-                </ul>
+                <img src="../htmlImgs/moodsImgs/unmotivated.png">
+                <p> Feeling Unmotivated is natural at certain times when things are uncertain, stressful, new, etc... but that feeling of not wanting to do things can be conquered. A article on how to overcome motivation:</p>
+                <a href="https://www.forbes.com/sites/nelldebevoise/2024/07/05/what-to-do-when-you-are-feeling-unmotivated/">What to do when unmotivated?</a>
             </div>
             <div class="infoBox" id="content6" style="display: none">
-                
+                <img src="../htmlImgs/moodsImgs/stressed.png">
                 <p> Stress and being overwhelmed are very closely related, the same methods can be used like meditation, being kind to yourself, writing your feeling could give you more structure and security, exercise like a jog or walk for example can also ease a stressed mind. Prolonged stress can have serve effects on both mental and physical health. We have 2 links attached to help with stress: <a href="https://www.womenshealthmag.com/health/a26306917/fast-stress-relief-techniques/?utm_source=google&utm_medium=cpc&utm_campaign=mgu_ga_whm_md_dsa_prog_mix_ca_19960292379&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrClKLvWnWiW9FLvTYK-NGgxu-aPML7rUwPMHiWcBmPcE-bNkSlKAekaAh3GEALw_wcB">Dealing with stress(Womans Health Magazine)</a> and <a href="https://my.clevelandclinic.org/health/diseases/11874-stress">Dealing with stress(Cleveland Clinic)</a> </p> 
-            
-                <ul>
-                    
-                </ul>
             </div>
             <div class="infoBox" id="content7" style="display: none">
-                
-                <p> Anger is not necessarily a bad in some situations thing but if you have unchecked anger(rage,wraith) in day to day situations or get to a boiling point very fast this can lead to health problems like blood pressure, and likely bad for your relationships with others. A resource is here to help you if you are struggling with anger: <a href="https://www.apa.org/topics/anger/control">How to control you anger before it control you</a></p> 
-                <ul>
-                <ul>
-                    
-                </ul>
+                <img src="../htmlImgs/moodsImgs/angry.png">
+                <p> Anger is not necessarily a bad in some situations thing but if you have unchecked anger(rage,wraith) in day to day situations or get to a boiling point very fast this can lead to health problems like blood pressure, and likely bad for your relationships with others. A resource is here to help you if you are struggling with anger:</p>
+                <a href="https://www.apa.org/topics/anger/control">How to control you anger before it control you</a>
             </div>
             <div class="infoBox" id="content8" style="display: none">
-                
-                <p> Being emotional can be a wide variety of feelings like sadness, anger, and sudden changes in your feeling/mood. Look inward and try to identify what is triggering your changes. A more in-depth and detailed article about emotions that could be harmful is : <a href="https://mhanational.org/helpful-vs-harmful-ways-manage-emotions">Helpful vs Harmful emotions</a></p> 
-                <ul>
-                <ul>
-                    
-                </ul>
+                <img src="../htmlImgs/moodsImgs/emotional.png">
+                <p> Being emotional can be a wide variety of feelings like sadness, anger, and sudden changes in your feeling/mood. Look inward and try to identify what is triggering your changes. A more in-depth and detailed article about emotions that could be harmful is :</p>
+                <a href="https://mhanational.org/helpful-vs-harmful-ways-manage-emotions">Helpful vs Harmful emotions</a>
             </div>
             <div class="infoBox" id="content9" style="display: none">
-                
+                <img src="../htmlImgs/moodsImgs/anxious.png">
                 <p> Anxiety can come from many sources such as childhood trauma, stress from a situation in your life, social pressure. the list goes on. Dealing with anxiety can be draining here are  <a href="https://www.wondermind.com/article/what-to-do-when-you-feel-lonely/">11 tips to help in dealing with this</a></p>
-                <ul>
-                </ul>
             </div>
             <div class="infoBox" id="content10" style="display: none">
-                <p> Being moody goes hand in hand with being emotional, the 2 are very closely related. We have attached two articles to help you one is for Moodiness specially and the other is just the article in emotional:  <a href="https://mhanational.org/helpful-vs-harmful-ways-manage-emotions">Helpful vs Harmful emotions</a></p> "https://my.clevelandclinic.org/health/symptoms/mood-swings">Mood Swings</a></p> 
+                <img src="../htmlImgs/moodsImgs/moody.png">
+                <p> Being moody goes hand in hand with being emotional, the 2 are very closely related. We have attached two articles to help you one is for Moodiness specially and the other is just the article in emotional</p>
+                <a href="https://mhanational.org/helpful-vs-harmful-ways-manage-emotions">Helpful vs Harmful emotions</a><a href="https://my.clevelandclinic.org/health/symptoms/mood-swings">Mood Swings</a>
                     
-                 <p>Article linked in Emotional:  <a href="https://mhanational.org/helpful-vs-harmful-ways-manage-emotions">Helpful vs Harmful emotions</a></p> </p>
-                    
-                
+                 <p>Article linked in Emotional:  <a href="https://mhanational.org/helpful-vs-harmful-ways-manage-emotions">Helpful vs Harmful emotions</a></p>
             </div>
-
             <div class="infoBox" id="content11" style="display: none">
-                <p> Tiredness and fatigue usually result from lack of sleep or trouble going to sleep. We have an article here that helps you understand your fatigue and how to possibley best it: <a href="https://www.womenshealthmag.com/health/a34579232/why-am-i-always-tired/?utm_source=google&utm_medium=cpc&utm_campaign=mgu_ga_whm_md_dsa_prog_org_ca_a34579232&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrCPA6M_69a986tmkgzgehIaKQWiuV1S-Yuq5nSCxk7Tz7Lo5oCv1fAaAlSPEALw_wcB">Why am I so tired all the time?</a></p>
-                <ul>
-                    
-                </ul>
+                <img src="../htmlImgs/moodsImgs/tired.png">
+                <p> Tiredness and fatigue usually result from lack of sleep or trouble going to sleep. We have an article here that helps you understand your fatigue and how to possibley best it:</p>
+                <a href="https://www.womenshealthmag.com/health/a34579232/why-am-i-always-tired/?utm_source=google&utm_medium=cpc&utm_campaign=mgu_ga_whm_md_dsa_prog_org_ca_a34579232&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrCPA6M_69a986tmkgzgehIaKQWiuV1S-Yuq5nSCxk7Tz7Lo5oCv1fAaAlSPEALw_wcB">Why am I so tired all the time?</a>
             </div>
             <div class="infoBox" id="content12" style="display: none">
-                
-                <p> Frustration can rise from an event where you want to do something but cannot, dealing with frustration can be difficult so here is an article with some methods of coping: <a href="https://mhanational.org/18-ways-cope-frustration" >Coping with Frustration </a></p>
-                <ul>
-                    
-                </ul>
+                <img src="../htmlImgs/moodsImgs/frustrated.png">
+                <p> Frustration can rise from an event where you want to do something but cannot, dealing with frustration can be difficult so here is an article with some methods of coping:</p>
+                <a href="https://mhanational.org/18-ways-cope-frustration" >Coping with Frustration </a>
             </div>
              <div class="infoBox" id="content13" style="display: none">
-               
-                <p>Irritability can arise from many different things we have listed like stress, lack of sleep(Tiredness), or could result from a diet change. Identifying the root cause of your irritability is key. A article to help you is:  <a href="https://health.clevelandclinic.org/irritability" >Irritability how and what to do</a></p>
-                
-                   
+                <img src="../htmlImgs/moodsImgs/irritated.png">
+                <p>Irritability can arise from many different things we have listed like stress, lack of sleep(Tiredness), or could result from a diet change. Identifying the root cause of your irritability is key. A article to help you is:</p>
+                <a href="https://health.clevelandclinic.org/irritability" >Irritability how and what to do</a>
             </div>
             <div class="infoBox" id="content14" style="display: none">
-                
-                <p>If you are feeling lonely a great resource is: <a href="https://www.wondermind.com/article/what-to-do-when-you-feel-lonely/">Wondermind.com!</a></p>
-                <ul> 
-                </ul>
+                <img src="../htmlImgs/moodsImgs/lonely.png">
+                <p>If you are feeling lonely a great resource is:</p>
+                <a href="https://www.wondermind.com/article/what-to-do-when-you-feel-lonely/">Wondermind.com!</a>
             </div>
         </main>
     </body>
