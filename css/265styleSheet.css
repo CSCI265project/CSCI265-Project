@@ -11,6 +11,7 @@ body{
 header{
     display: flex;
     flex-direction: row;
+    background-color: rgb(255, 203, 213);
 }
 
 /*Top banner css*/
@@ -20,7 +21,6 @@ header{
     align-items: center;
     top: 0;
     width: 100%;
-    background-color: rgb(255, 203, 213);
     font-family: 'Shrikhand', serif;
 }
 
@@ -30,6 +30,18 @@ header{
     padding-top: 20px;
     padding-bottom: 40px;
     font-family: 'Shrikhand', serif;
+    position: absolute;
+}
+
+
+            
+.hL{
+    float: left;
+    background-color: 
+}
+            
+.hR{
+    float: right;
 }
 
 /*Log out div*/
