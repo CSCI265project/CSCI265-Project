@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="html tutorial, css tutorial">
     <meta name="robots" content="INDEX, FOLLOW">
+    <link rel="icon" type="image/x-icon" href="../htmlImgs/headerImgs/logoCopy.png">
 
     <!--Font Style From Google-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap">
@@ -113,9 +114,12 @@
   
     <!--Nav Bar-->
     <header>
+        <img class="hL" src="../htmlImgs/headerImgs/headerL.png">
         <div class="topbar">
             <p>Education</p>
+            <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
         </div>
+        <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
         <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
             <button type="submit" class="button">Logout</button>
         </form>

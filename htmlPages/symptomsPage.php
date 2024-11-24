@@ -9,7 +9,7 @@
         <title>Symptoms</title>
         <meta charset="utf=8">
         <link rel="stylesheet" href="../css/265styleSheet.css">
-        <link rel="icon" type="image/x-icon" href="">
+        <link rel="icon" type="image/x-icon" href="../htmlImgs/headerImgs/logoCopy.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -54,7 +54,6 @@
             
             .checkBoxes div{
                 margin: 0px 15px 0px 15px;
-                /*background-color: red;*/
                 width: 200px;
             }
             
@@ -77,7 +76,7 @@
             
             .infoBox{
                 width: 1000px;
-                height: 500px;
+                min-height: 100px;
                 border: solid 3px;
                 border-color: rgb(255, 172, 183);
                 margin: 0px 0px 50px 0px;
@@ -94,10 +93,15 @@
                 margin: 0px 0px 0px 30px;
             }
             
+            .infoBox div{
+                float: left;
+                padding-bottom: 20px;
+            }
+            
             .buttonContainer{
                 display: flex;
                 flex-direction: column;
-                margin-bottom: 30px;
+                margin-bottom: 50px;
                 width: 100%;
                 align-items: center;
             }
@@ -109,81 +113,159 @@
         <script>
             function display1(){
                 var checkBox = document.getElementById("Acne");
-                var text = document.getElementById("content1");
+                var text1 = document.getElementById("acneAntibiotics");
+                var text2 = document.getElementById("contraceptives");
+                var text3 = document.getElementById("isotretinoins");
+                var text4 = document.getElementById("antiAndrogens");
+                var text5 = document.getElementById("retinoids");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
+                    text4.style.display = "block";
+                    text5.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
+                    text4.style.display = "none";
+                    text5.style.display = "none";
                 }
             }
             
             function display2(){
                 var checkBox = document.getElementById("Bloating");
-                var text = document.getElementById("content2");
+                var text1 = document.getElementById("exercise");
+                var text2 = document.getElementById("sleep");
+                var text3 = document.getElementById("probiotics");
+                var text4 = document.getElementById("contraceptives");
+                var text5 = document.getElementById("avoidEating");
+                var text6 = document.getElementById("avoidDrugs");
+                var text7 = document.getElementById("avoidPop");
                 if(checkBox.checked == true){
-                    content2.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
+                    text4.style.display = "block";
+                    text5.style.display = "block";
+                    text6.style.display = "block";
+                    text7.style.display = "block";
                 } else{
-                    content2.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
+                    text4.style.display = "none";
+                    text5.style.display = "none";
+                    text6.style.display = "none";
+                    text7.style.display = "none";
                 }
             }
             
             function display3(){
                 var checkBox = document.getElementById("Cramps");
-                var text = document.getElementById("content3");
+                var text1 = document.getElementById("heat");
+                var text2 = document.getElementById("lyingDown");
+                var text3 = document.getElementById("exercise");
+                var text4 = document.getElementById("antiInflammatory");
+                var text5 = document.getElementById("contraceptives");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
+                    text4.style.display = "block";
+                    text5.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
+                    text4.style.display = "none";
+                    text5.style.display = "none";
                 }
             }
             
             function display4(){
                 var checkBox = document.getElementById("Dizzyness");
-                var text = document.getElementById("content4");
+                var text1 = document.getElementById("ironSupplements");
+                var text2 = document.getElementById("ironFoods");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
                 }
             }
             
             function display5(){
                 var checkBox = document.getElementById("Fatigue");
-                var text = document.getElementById("content5");
+                var text1 = document.getElementById("hydrate");
+                var text2 = document.getElementById("exercise");
+                var text3 = document.getElementById("roomTemp");
+                var text4 = document.getElementById("relax");
+                var text5 = document.getElementById("avoidEating");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
+                    text4.style.display = "block";
+                    text5.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
+                    text4.style.display = "none";
+                    text5.style.display = "none";
                 }
             }
             
             function display6(){
                 var checkBox = document.getElementById("Headaches");
-                var text = document.getElementById("content6");
+                var text1 = document.getElementById("antiInflammatory");
+                var text2 = document.getElementById("caffeine");
+                var text3 = document.getElementById("contraceptives");
+                var text4 = document.getElementById("therapy");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
+                    text4.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
+                    text4.style.display = "none";
                 }
             }
             
             function display7(){
                 var checkBox = document.getElementById("LBP");
-                var text = document.getElementById("content7");
+                var text1 = document.getElementById("antiInflammatory");
+                var text2 = document.getElementById("heat");
+                var text3 = document.getElementById("exercise");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
                 }
             }
             
             function display8(){
                 var checkBox = document.getElementById("Nausea");
-                var text = document.getElementById("content8");
+                var text1 = document.getElementById("ginger");
+                var text2 = document.getElementById("peppermint");
+                var text3 = document.getElementById("hydrate");
                 if(checkBox.checked == true){
-                    text.style.display = "block";
+                    text1.style.display = "block";
+                    text2.style.display = "block";
+                    text3.style.display = "block";
                 } else{
-                    text.style.display = "none";
+                    text1.style.display = "none";
+                    text2.style.display = "none";
+                    text3.style.display = "none";
                 }
             }
             
@@ -191,49 +273,63 @@
                 if(document.getElementById("Acne").checked){
                     display1();
                 } else{
-                    content1.style.display = "none";
+                    acneAntibiotics.style.display = "none";
+                    contraceptives.style.display = "none";
+                    isotretinoins.style.display = "none";
+                    antiAndrogens.style.display = "none";
+                    retinoids.style.display = "none";
                 }
                 
                 if(document.getElementById("Bloating").checked){
                     display2();
                 } else{
-                    content2.style.display = "none";
+                    exercise.style.display = "none";
+                    sleep.style.display = "none";
+                    probiotics.style.display = "none";
+                    avoidEating.style.display = "none";
+                    avoidDrugs.style.display = "none";
+                    avoidPop.style.display = "none";
                 }
                 
                 if(document.getElementById("Cramps").checked){
                     display3();
                 } else{
-                    content3.style.display = "none";
+                    heat.style.display = "none";
+                    lyingDown.style.display = "none";
+                    antiInflammatory.style.display = "none";
                 }
                 
                 if(document.getElementById("Dizzyness").checked){
                     display4();
                 } else{
-                    content4.style.display = "none";
+                    ironSupplements.style.display = "none";
+                    ironFoods.style.display = "none";
                 }
                 
                 if(document.getElementById("Fatigue").checked){
                     display5();
                 } else{
-                    content5.style.display = "none";
+                    hydrate.style.display = "none";
+                    roomTemp.style.display = "none";
+                    relax.style.display = "none";
                 }
                 
                 if(document.getElementById("Headaches").checked){
                     display6();
                 } else{
-                    content6.style.display = "none";
+                    caffeine.style.display = "none";
+                    therapy.style.display = "none";
                 }
                 
                 if(document.getElementById("LBP").checked){
                     display7();
-                } else{
-                    content7.style.display = "none";
                 }
                 
                 if(document.getElementById("Nausea").checked){
                     display8();
                 } else{
-                    content8.style.display = "none";
+                    ginger.style.display = "none";
+                    peppermint.style.display = "none";
                 }
             }
             
@@ -248,9 +344,12 @@
     <body>
         <!--Header of Page-->
         <header>
+            <img class="hL" src="../htmlImgs/headerImgs/headerL.png">
             <div class="topbar">
                 <p>Symptoms</p>
+                <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
             </div>
+            <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
             <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
                 <button type="submit" class="button">Logout</button>
             </form>
@@ -329,70 +428,130 @@
                 </div>
             </div>
             
-            <div class="infoBox" id="content1" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Antibiotics).</p>
-                <ul>
-                    <li>Antibiotics</li>
-                    <li>some other stuff</li>
-                </ul>
+            
+            <div class="infoBox" id="acneAntibiotics" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/antibiotics.png">
+                    <h2>Antibiotics</h2>
+                <p>For oral medication try doxycycline, minocycline or azithromycin.</p>
+                <p>(*The last option would be recomended for pregnant women and children 7 years old and under).</p><p>Alternatively, for topical medication try erythromycin, clindamycin or Dapsone (Aczone gel).</p>
             </div>
-            <div class="infoBox" id="content2" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Bloating).</p>
-                <ul>
-                    <li>Antibiotics</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="antiAndrogens" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/antiAndrogen.png">
+                    <h2>Anti-Androgens</h2>
+                    <p>Using Anti-Androgens such as spironolactone may help.</p>
+                    <p>(*Use only if other options do not work).</p>
             </div>
-            <div class="infoBox" id="content3" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Cramps).</p>
-                <ul>
-                    <li>Cramps</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="antiInflammatory" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/antiInflammatory.png">
+                    <h2>Anti-inflammatory medicine</h2>
+                    <p>You may suffer from symptoms that cause swelling in your body. Anti-inflammatory medicine such as Ibuprofin, naproxen or aspirin can help with this problem. These options are over-the-counter, so you can acquire them normally.</p>
             </div>
-            <div class="infoBox" id="content4" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Dizzyness).</p>
-                <ul>
-                    <li>Dizzyness</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="caffeine" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/caffeine.png">
+                    <h2>Caffeine</h2>
+                    <p>Try having some caffeinated foods and drinks. Do be aware that abruptly stopping taking caffeine can lead to withdrawal headaches.</p>
             </div>
-            <div class="infoBox" id="content5" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Fatigue).</p>
-                <ul>
-                    <li>Fatigue</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="contraceptives" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/contraceptive.png">
+                    <h2>Contraceptives</h2>
+                    <p>Contraceptives such as birth control pills can help with hormone control during your period.</p>
             </div>
-            <div class="infoBox" id="content6" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Headaches).</p>
-                <ul>
-                    <li>Headaches</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="exercise" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/exercise.png">
+                    <h2>Exercise and stretching</h2>
+                    <p>Regular exercise such as going for a walk or yoga can help regulate stress and keep your body fit.</p>
             </div>
-            <div class="infoBox" id="content7" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Lower Back Pain).</p>
-                <ul>
-                    <li>Lower Back Pain</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="ginger" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/ginger.png">
+                    <h2>Ginger</h2>
+                    <p>Ginger can help combat nausea. Try having some ginger tea or any ginger related foods.</p>
             </div>
-            <div class="infoBox" id="content8" style="display: none">
-                <img src="../htmlImgs/c3.jpg">
-                <p>Info on some stuff (Nausea).</p>
-                <ul>
-                    <li>Nausea</li>
-                    <li>some other stuff</li>
-                </ul>
+            <div class="infoBox" id="heat" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/heat.png">
+                <h2>Apply heat</h2>
+                <p>Apply heat to your abdomen or lower back. This should help with any pain you're experiencing.</p>
             </div>
+            <div class="infoBox" id="ironSupplements" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/ironSup.png">
+                    <h2>Iron supplements</h2>
+                    <p>Iron supplements will help with iron-deficiency anemia.</p>
+            </div>
+            <div class="infoBox" id="ironFoods" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/ironFoods.png">
+                <h2>Iron-rich foods</h2>
+                <p>Eat iron-rich foods such as meat, eggs, nuts or dried fruits.</p>
+                <p>(*Calcium pills may affect your ability to absorb iron).</p>
+            </div>
+            <div class="infoBox" id="isotretinoins" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/isotretinoins.png">
+                <h2>Isotretinoin</h2>
+                <p>Isotretinoin such as Amnesteem or Clavaris may help.</p>
+                <p>(*Use only if other options do not work).</p>
+                <p>(*Requires prescription).</p>
+            </div>
+            <div class="infoBox" id="hydrate" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/hydrate.png">
+                    <h2>Keep hydrated</h2>
+                    <p>Drink plenty of water to avoid dehydration.</p>
+            </div>
+            <div class="infoBox" id="lyingDown" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/lyingDown.png">
+                    <h2>Lying down</h2>
+                    <p>Lie down on your back and raise your legs with a pillow or lie down on your side and raise your knees to your chest.</p>
+            </div>
+            <div class="infoBox" id="peppermint" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/mint.png">
+                    <h2>Peppermint</h2>
+                    <p>Try having some peppermint. This may help with your nausea.</p>
+            </div>
+            <div class="infoBox" id="probiotics" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/guts.png">
+                    <h2>Probiotics</h2>
+                    <p>Probiotics will help your gut biome, which may help against bloating.</p>
+            </div>
+            <div class="infoBox" id="roomTemp" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/temp.png">
+                    <h2>Reduce room temperature</h2>
+                    <p>Try lowering the room temperature. This may help with your sleep quality.</p>
+            </div>
+            <div class="infoBox" id="relax" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/relax.png">
+                    <h2>Relaxing techniques</h2>
+                    <p>Relaxation techniques such as meditation or breathing exercises will help reduce stress.</p>
+            </div>
+            <div class="infoBox" id="sleep" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/sleep.png">
+                    <h2>Rest</h2>
+                    <p>Get as much sleep as possible and keep a good sleep schedule. (Around 8~9 uniterrupted hours).</p>
+            </div>
+            <div class="infoBox" id="retinoids" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/retinoids.png">
+                    <h2>Retinoids</h2>
+                    <p>Using retinoids such as Adapalene, Tretinoin (Prescribed) or Tarazotene (Prescribed) may help.</p>
+            </div>
+            <div class="infoBox" id="therapy" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/therapy.png">
+                    <h2>Hormone therapy.</h2>
+                    <p>Estrogen supplements can be used to help regulate your hormone levels. Consult your doctor if you think you may need hormone therapy.</p>
+            </div>
+            
+            
+            <div class="infoBox" id="avoidEating" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/noS.png">
+                    <h2>Avoid certain foods</h2>
+                    <p>Avoid food with lots of salt, sugar and try eat slowly. This may help with your symptoms.</p>
+            </div>
+            <div class="infoBox" id="avoidDrugs" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/noDrugs.png">
+                    <h2>Avoid tobacco and alchohol</h2>
+                    <p>Tobacco and alchohol can possibly worsen your symptoms. It's best to avoid them for now.</p>
+            </div>
+            <div class="infoBox" id="avoidPop" style="display: none">
+                <img src="../htmlImgs/symptomsImgs/noPop.png">
+                    <h2>Avoid fizzy drink</h2>
+                    <p>Fizzy drinks like pop may worsen your symptoms. It's best to avoid them for now.</p>
+            </div>
+            
         </main>
     </body>
 </html>

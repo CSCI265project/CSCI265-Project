@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/265styleSheet.css">
+    <link rel="icon" type="image/x-icon" href="../htmlImgs/headerImgs/logoCopy.png">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +20,12 @@
 </head>
 <body>
     <header>
+        <img class="hL" src="../htmlImgs/headerImgs/headerL.png">
         <div class="topbar">
             <p>Calendar</p>
+            <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
         </div>
+        <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
         <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
             <button type="submit" class="button">Logout</button>
         </form>
