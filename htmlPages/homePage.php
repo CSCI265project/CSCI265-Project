@@ -1,12 +1,44 @@
 <?php
     require "../sourcePHP/functions.php";
+    require "../sourcePHP/mail.php";
     check_login();
+
+    $vars['email'] = $_SESSION['USER']->email;
+    $query = "select date, email from users where email = :email";
+    $result = database_run($query, $vars);
+
+    $firstPeriodDay = null;
+    $userEmail = null;
+
+    if ($result && is_array($result) && count($result) > 0) {
+        $firstPeriodDay = $result[0]->date;
+        $userEmail = $result[0]->email; 
+    }
+    
+    $vars['email'] = $_SESSION['USER']->email;
+    if (isset($_POST['daysSinceLastPeriod'])) {
+        $days = (int)$_POST['daysSinceLastPeriod'];
+        echo "Days since last period: " . $days;
+
+        if($days == 26){
+            $message = "You are currently on Day 26, be sure to be prepared!";
+            $subject = "Your Period is around the corner!";
+            $recipient = $vars['email'];
+            send_mail($recipient,$subject,$message);
+        }
+        else if($days == 32){
+            $message = "You havent added a date and its day 32, if you havent got your period, we recommend you to see a doctor";
+            $subject = "Are you late?";
+            $recipient = $vars['email'];
+            send_mail($recipient,$subject,$message);
+        }
+    }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>C-Clo Home</title>
+    <title>Home</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styles.css">
@@ -82,6 +114,12 @@
         .question a:hover{
             color: rgb(255, 0, 0);
         }
+
+        #counter-display {
+            font-size: 150px;
+            font-weight: bold;
+            color: rgb(110, 89, 95);
+        }
         
     </style>
 </head>
@@ -93,9 +131,6 @@
             <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
         </div>
         <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
-        <!--<div class="logout">
-            <button class="button">Logout</button>
-        </div>-->
         <form action="/cClophp/CSCI265-Project-development/sourcePHP/logout.php" method="post" class="logout">
             <button type="submit" class="button">Logout</button>
         </form>
@@ -128,15 +163,18 @@
                     <p>You are currently</p>
                     <p>on day</p>
                     <div id="current-cycle-day">
-                        <h3 id="day-count">17</h3> <!-- Placeholder for dynamic content -->
+                        <div id="counter-display" ></div>
+                        <br></br>
                     </div>
+                    <p>of your cycle</p>
+
                 </div>
             </div>
 
             <section id="user-questions">
                 <div class="question">
                     <p>Did you get your period yet?</p>
-                    <a href="#" onclick="addPeriodDate()">Add date to the calendar</a>
+                    <a href="calendarPage.php">Add date to the calendar</a>
                 </div>
 
                 <div class="question">
@@ -148,6 +186,10 @@
         </div>
     </main>
 
-    <script src="../c-clo-home.js"></script>
+    <script src="../counter.js"></script>
+    <script>
+        let firstPeriodDay = <?php echo json_encode($firstPeriodDay); ?>;
+        const userEmail = <?php echo json_encode($userEmail); ?>;
+    </script>
 </body>
 </html>

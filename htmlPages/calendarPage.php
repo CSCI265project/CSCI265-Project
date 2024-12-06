@@ -1,6 +1,21 @@
 <?php
     require "../sourcePHP/functions.php";
     check_login();
+
+    $vars['email'] = $_SESSION['USER']->email;
+    $query = "select date, duration, email from users where email = :email";
+    $result = database_run($query, $vars);
+
+    $firstPeriodDay = null;
+    $periodLength = null;
+    $userEmail = null;
+
+    if ($result && is_array($result) && count($result) > 0) {
+        $firstPeriodDay = $result[0]->date;
+        $periodLength = $result[0]->duration;
+        $userEmail = $result[0]->email; 
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -46,6 +61,11 @@
     </section>
 
     <script src="../calendar.js"></script>
+    <script>
+        let firstPeriodDay = <?php echo json_encode($firstPeriodDay); ?>;
+        let periodLength = <?php echo json_encode($periodLength); ?>;
+        const userEmail = <?php echo json_encode($userEmail); ?>;
+    </script>
 </body>
 </html>
 
