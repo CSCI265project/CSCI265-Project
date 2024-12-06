@@ -33,8 +33,6 @@ header{
     position: absolute;
 }
 
-
-            
 .hL{
     float: left;
     background-color: 
@@ -80,7 +78,7 @@ header .logout{
 
 .navbar a:hover{
     background-color: #d8e2dc;
-    color: red;
+    color: #fff;
     font-family: 'Cormorant Garamond', serif;
 }
 

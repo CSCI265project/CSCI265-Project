@@ -1,75 +1,81 @@
-/* Calendar grid container */
+
 .calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    grid-template-rows: repeat(3, auto);   /* 3 rows */
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
- }
- 
- /* Each month container styling */
- .month-container {
-    color: red;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
- }
- 
- /* Month title */
- .month-container h2 {
-    font-family: 'Shrikhand', serif;
-    font-size: 1.5rem;
-    background-color: rgb(255, 172, 183);
-    margin: 0 0 10px;
- }
- 
- /* Table styling */
- .calendar-table {
-    width: 100%;
-    border-collapse: collapse;
-    background-color: rgb(255, 172, 183);
- }
- 
- .calendar-table th {
-    font-weight: bold;
-    background-color: rgb(255, 172, 183);;
-    padding: 5px;
-    background-color: white;
- }
- 
- .calendar-table td {
-    padding: 5px;
-    text-align: center;
-    border: 1px solid #dddddd;
-    background-color: white;
-    background-color: rgb(255, 172, 183);
- }
- 
- /* Style for the navigation links */
- nav a {
-    font-family: 'Cormorant Garamond', serif; /* Use the specified font */
-    font-size: 1.2rem; /* Increase the font size */
-    color: #e2d8de; /* Adjust the color to match the design */
-    text-decoration: none; /* Remove underlines */
-    margin: 0 20px; /* Add spacing between links */
-    font-weight: 600; /* Make the font slightly bolder */
-    padding: 10px 20px; /* Add padding around the text */
-    background-color: rgb(255, 203, 213); /* Light pink background for the buttons */
-    border-radius: 8px; /* Rounded corners for the links */
- }
- 
- nav a:hover {
-    background-color: rgb(255, 203, 213);; /* Darker pink on hover */
-    color: black /* Change text color on hover */
- }
- 
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); 
+   grid-template-rows: repeat(3, auto);  
+   gap: 20px;
+   padding: 20px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
 
 
+.month-container {
+   color: red;
+   border: 1px solid #ddd;
+   padding: 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
 
+.month-container h2 {
+   font-family: 'Shrikhand', serif;
+   font-size: 1.5rem;
+   background-color: rgb(255, 172, 183);
+   margin: 0 0 10px;
+}
 
 
+.calendar-table {
+   width: 100%;
+   border-collapse: collapse;
+}
 
+.calendar-table th {
+   font-weight: bold;
+   background-color: rgb(255, 172, 183);
+   padding: 5px;
+   background-color: white;
+}
+
+nav a {
+   font-family: 'Cormorant Garamond', serif; /* Use the specified font */
+   font-size: 1.2rem; /* Increase the font size */
+   color: #e2d8de; /* Adjust the color to match the design */
+   text-decoration: none; /* Remove underlines */
+   margin: 0 20px; /* Add spacing between links */
+   font-weight: 600; /* Make the font slightly bolder */
+   padding: 10px 20px; /* Add padding around the text */
+   background-color: rgb(255, 203, 213); /* Light pink background for the buttons */
+   border-radius: 8px; /* Rounded corners for the links */
+}
+
+nav a:hover {
+   background-color: rgb(255, 203, 213);; /* Darker pink on hover */
+   color: black /* Change text color on hover */
+}
+
+#calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.month-container {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 14.28%;
+  height: 40px;
+}
+.event-day {
+  background-color: rgb(255, 172, 183);
+}

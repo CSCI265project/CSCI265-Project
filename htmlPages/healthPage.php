@@ -7,7 +7,7 @@
 <html lang="en">
 
 <head>
-    <title>C-Clo Health</title>
+    <title>Health</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -182,7 +182,7 @@
     <div class="faq-container">
         <div class="faq-item">
             <button class="faq-question">How often am I supposed to change my pad/tampon?
-                <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+            <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
             <div class="faq-answer">
                 <p>You should change your pad or tampon every 4–6 hours, or as needed depending on your flow.</p>
             </div>
@@ -190,7 +190,7 @@
 
         <div class="faq-item">
             <button class="faq-question">Can I exercise during my period?
-                <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
+            <img src="../htmlImgs/down_arrow.svg" class="faq_icon arrow" alt="Arrow"></button>
             <div class="faq-answer">
                 <p>Yes, exercising during your period is generally safe and can help reduce cramps and improve mood.</p>
             </div>

@@ -9,8 +9,8 @@ body{
 
 }
 input::placeholder {
-    color: #bd9ea7; /* Change this to any desired color */
-    opacity: 3; /* Optional: Set the opacity to make the color fully opaque */
+    color: #bd9ea7; 
+    opacity: 3; 
 }
 .container{
     margin:50px auto;
@@ -45,8 +45,8 @@ input::placeholder {
 }
 .smallCon {
     color: #6e595f;
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     font-family: "Cormorant Garamond", serif;
     font-size: 20px;
@@ -101,10 +101,6 @@ input::placeholder {
     font-family: "Cormorant Garamond", serif;
     font-size: 16px;
 }
-
-
-
-
 
 .container .element input[type=submit]:hover{
    background-color: #d8e2dc;
