@@ -96,9 +96,12 @@
 </head>
 <body>
     <header>
+        <img class="hL" src="../htmlImgs/headerImgs/headerL.png">
         <div class="topbar">
             <p>Verification</p>
+            <img class="logo" src="../htmlImgs/headerImgs/logoCopy.png">
         </div>
+        <img class="hR" src="../htmlImgs/headerImgs/headerR.png">
         <!--<div class="logout">
             <button class="button">Logout</button>
         </div>-->
